@@ -13,7 +13,9 @@ const IndexPage = ({data}) => (
     <IntroductionSection/>
     <MemberSection/>
     <ProjectItemSection/>
-    <div className='blog-container'>
+  
+  
+ <div className='blog-container'>
   {
     data.allMarkdownRemark.edges.map((item)=>{
       return (

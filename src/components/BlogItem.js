@@ -10,7 +10,7 @@ const BlogItem = ({data})=> {
         <BlogItemWapper>
             <Row type='flex' justify='start'>
                <Col span={22} align='left'>
-                   <div className='date'>2020.02.14</div>
+                   <div className='date'>{data ? data.node.frontmatter.date:""}</div>
                </Col>
             </Row>
 

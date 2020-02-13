@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "gatsby"
 import {Row,Col,Button} from 'antd';
 import {BlogItemWapper} from './style'
 
@@ -35,7 +36,7 @@ const BlogItem = ({data})=> {
             
             <Row type='flex' justify='start'>
                <Col span={22} align='left'>
-                  <Button type="primary">Read More</Button>
+                  <Button type="primary"><Link to={data ? data.node.frontmatter.path:""}>Read More</Link></Button>
                </Col>
             </Row>
             

@@ -1,21 +1,47 @@
 import React, { Component } from 'react';
 import {graphql} from 'gatsby'
+import {Row,Col} from 'antd'
+import Author from './componments/Author'
+import './style.css'
 
 export default function Blog ({data}){
     console.log(data)
     const {markdownRemark}=data
     const {html,frontmatter} = markdownRemark
     return (
-  
-        <div className = "container">
+        <div className = 'container'>
         
-          <div>{frontmatter.title}</div>
-          <div>{frontmatter.date}</div>
-          <div className="blog-content-container" dangerouslySetInnerHTML={{__html:html}}>
-             
-          </div>
+        <Row type='flex' justify='start'>
+            <Col span={12} align='center'>
+               <div className='head'>Team ASH Blog</div>
+            </Col>
+        </Row>
+
+        <Row type='flex' justify='start'>
+            <Col span={12} >
+               <div className='title'>{frontmatter.title}</div>
+            </Col>
+        </Row>
         
-        </div>
+        <Row type='flex' justify='start'>
+             <Col span={12} >
+               <div className='date'>{frontmatter.date}</div>
+             </Col>
+        </Row>
+
+        <Row type='flex' justify='start'>
+             <Col span={12} >
+                <Author name={frontmatter.author}/>
+             </Col>
+        </Row>
+          
+       <Row type='flex' justify='center'>
+           <Col span={20} >
+              <div className="blog-content-container" dangerouslySetInnerHTML={{__html:html}}></div>
+          </Col>
+       </Row> 
+        
+  </div>
 
     )
 }
@@ -28,6 +54,7 @@ query($path: String!) {
       date(formatString: "MMMM DD, YYYY")
       path
       title
+      author
     }
   }
 }

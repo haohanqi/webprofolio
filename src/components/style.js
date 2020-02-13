@@ -25,7 +25,7 @@ background-color:black;
 //----------------------------------------
 
 
-
+//Header section--------------------------------
 export const NavWapper = styled.div `
 background-color: #F1F0F0;
 height:68px;
@@ -52,7 +52,11 @@ text-align:center;
 font-size:25px;
 font-weight:bolder;
 `
+//-----------------------------------------
 
+
+
+//introduction section -----------------------------------------------------
 export const IntroWapper = styled.div`
 width:100%;
 background-color:black;
@@ -81,11 +85,17 @@ font-weight:bolder;
     color:#BFBFBF;
 }
 `
+//-----------------------------------------------------------
+
+
+
 
 export const MemberWapper = styled(SectionWapper)`
 background-color:#BFBFBF;
 `
 
+
+//project section---------------------------------------
 export const ProjectItemWapper = styled(SectionWapper)`
 `
 
@@ -115,7 +125,6 @@ color:black;
 }
 
 `
-
 export const Cover = styled(ItemContent)`
 float:left;
 margin-left:0;
@@ -131,6 +140,7 @@ img{
     display: table;
 }
 `
+
 export const SocialLinks = styled.div`
 float:left;
 text-align:center;
@@ -143,6 +153,10 @@ i{
     margin:0 5%;
 }
 `
+//-----------------------------------------------
+
+
+//blog section -----------------------------------------
 
 export const BlogsWapper = styled(SectionWapper)`
 background-color:white;
@@ -180,4 +194,5 @@ button{
 }
 
 `
+
 

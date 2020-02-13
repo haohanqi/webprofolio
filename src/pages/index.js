@@ -13,8 +13,10 @@ const IndexPage = ({data}) => (
     <SEO title="Home" />
     <IntroductionSection/>
     <MemberSection/>
+    {/*Timelinesection*/}
     <ProjectItemSection/>
     <BlogSection data={data}/>
+    {/*FooterSection*/}
   </Layout>
 )
 export const pageQuery = graphql`

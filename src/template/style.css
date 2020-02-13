@@ -1,0 +1,36 @@
+.container{
+    width: 100%;
+    margin: 5% 20%;
+}
+
+.head{
+   font-size: 25px;
+   margin-bottom: 5%;
+   font-weight: bold;
+   text-align: left;
+}
+
+
+.title{
+    font-size: 35px;
+    text-align: left;
+    font-weight: bolder;
+}
+
+.date{
+    text-align: left;
+    margin-bottom: 5%;
+}
+
+.blog-content-container{
+    width:100%;
+    margin:5% auto;
+    font-size: 20px;
+}
+
+.authorDes{
+    width:75%;
+    float:right;
+    display: block;
+    margin-right: 15%;
+}

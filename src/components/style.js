@@ -24,6 +24,8 @@ background-color:black;
 
 //----------------------------------------
 
+
+
 export const NavWapper = styled.div `
 background-color: #F1F0F0;
 height:68px;
@@ -142,4 +144,40 @@ i{
 }
 `
 
+export const BlogsWapper = styled(SectionWapper)`
+background-color:white;
+`
+
+export const BlogItemWapper = styled.div`
+margin:5% auto;
+width: 100%;
+padding-bottom:5%;
+//border:1px solid black;
+border-radius:25px;
+.date{
+    margin:0% 10% 0 10%;
+    font-weight:bold;
+}
+.title{
+    margin:5% 10% 0 10%;
+    font-weight:bolder;
+    font-size:20px;
+}
+
+.content{
+    margin:5% 10%;
+    font-size:18px;
+}
+
+.author{
+    margin:5% 10% 0 10%;
+    font-weight:bold;
+}
+
+button{
+    margin:0% 10% 0 10%;
+
+}
+
+`
 

@@ -14,8 +14,6 @@ const Author =({name,avatarSrc})=> {
                             React, Gatsby</div>
                      </div>
                    </Col>
-
-                   
                 </Row>
             </div>
         );

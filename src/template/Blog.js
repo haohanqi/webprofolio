@@ -12,31 +12,31 @@ export default function Blog ({data}){
         <div className = 'container'>
         
         <Row type='flex' justify='start'>
-            <Col span={12} align='center'>
+            <Col xs={20} md={12} align='center'>
                <div className='head'>Team ASH Blog</div>
             </Col>
         </Row>
 
         <Row type='flex' justify='start'>
-            <Col span={12} >
+            <Col xs={20} >
                <div className='title'>{frontmatter.title}</div>
             </Col>
         </Row>
         
         <Row type='flex' justify='start'>
-             <Col span={12} >
+             <Col xs={20} >
                <div className='date'>{frontmatter.date}</div>
              </Col>
         </Row>
 
         <Row type='flex' justify='start'>
-             <Col span={12} >
+             <Col xs={24} >
                 <Author name={frontmatter.author}/>
              </Col>
         </Row>
           
        <Row type='flex' justify='center'>
-           <Col span={20} >
+           <Col xs={24} >
               <div className="blog-content-container" dangerouslySetInnerHTML={{__html:html}}></div>
           </Col>
        </Row> 

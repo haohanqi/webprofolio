@@ -17,29 +17,27 @@ const MemberSection =()=> {
     }
 
         return (
-            <MemberWapper>
+            <MemberWapper id='team'>
                 
                 <Row type='flex' justify='start'>
-                     <Col span={12} > 
+                     <Col span={12} data-sal='zoom-in' data-sal-delay="400" > 
                        <TitleWapper>
-                          <Title color='white' size='35px'  textAlign='left'>TEAM MEMBERS</Title>
-                          <span></span>
+                          <Title color='black' textAlign='left'>TEAM MEMBERS</Title>
+                          <span black></span>
                        </TitleWapper>    
                      </Col>
                 </Row>
                 
                 <Row type='flex' justify='space-around' align='middle'>   
                    
-                    <Col span={6} align='center'>
+                    <Col xs={18} md={6}align='center' data-sal='fade' data-sal-delay="600">
                         <IdentityCard title='Hao HanQi' />
                     </Col>
                     
-                    <Col span={6} align='center'>
+                    <Col xs={18} md={6} align='center' data-sal='fade' data-sal-delay="750">
                         <IdentityCard/>
                     </Col>
-                    
-                    
-                    <Col span={6} align='center'>
+                    <Col xs={18} md={6} align='center' data-sal='fade' data-sal-delay="850">
                         <IdentityCard title='HanQi Hao' description={<Description position='FrontEnd Developer' education='York University (CS degree)' ws='JS CSS React Gatsby'/>}/>
                     </Col>   
                 </Row>

@@ -5,21 +5,21 @@ import {NavWapper,NavItem,Logo} from './style'
 
 const Header = ({ siteTitle }) => (
   <NavWapper>
-     <Row  type="flex"  align="middle" >
-         <Col span={3}><Logo>ASH</Logo></Col>
-         <Col span={3} offset={12}>
+     <Row  type="flex"   align="middle" >
+         <Col span={3} ><Logo>ASH</Logo></Col>
+         <Col xs={3} md={4} offset={9} >
            <NavItem>
                <Link className='link'>Home</Link>
            </NavItem>
          </Col>
          
-         <Col span={3}>
+         <Col xs={3} md={4}>
             <NavItem>
                <Link className='link'>Project</Link>
             </NavItem>
          </Col>
          
-         <Col span={3}>
+         <Col xs={3} md={4}>
            <NavItem>
               <Link className='link'>Contact</Link>
            </NavItem>

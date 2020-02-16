@@ -14,6 +14,7 @@
     "gatsby-plugin-netlify-cms": "^4.1.39",
     "gatsby-plugin-offline": "^3.0.32",
     "gatsby-plugin-react-helmet": "^3.1.21",
+    "gatsby-plugin-scroll-reveal": "0.0.6",
     "gatsby-plugin-sharp": "^2.4.3",
     "gatsby-plugin-styled-components": "^3.1.19",
     "gatsby-source-filesystem": "^2.1.46",
@@ -25,6 +26,7 @@
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-helmet": "^5.2.1",
+    "smooth-scroll": "^16.1.2",
     "styled-components": "^5.0.1"
   },
   "devDependencies": {

@@ -7,7 +7,7 @@ const Author =({name,avatarSrc})=> {
             <div>
                 <Row type='flex' justify='start'>
                    
-                   <Col>
+                   <Col >
                      <div>
                          <Avatar className='avatar' size='large' icon="user"/>
                          <div className='authorDes'>Written by  who lives <b>{name?name:""}</b> who works in Toronto building useful things. Lovinv 

@@ -7,12 +7,12 @@ margin: 5% 10%;
 span{
     margin-top:3%;
     display:block;
-    border:1px solid white;  
+    border: ${props => props.white ? "1px soild white" : "1px solid black"};
 }
 `
 export const Title = styled.div(props=>({
    color: props.color,
-   fontSize: props.size,
+   fontSize: `3.5vw`,
    textAlign:props.textAlign,
    margin:props.margin,
 }))
@@ -27,30 +27,43 @@ background-color:black;
 
 //Header section--------------------------------
 export const NavWapper = styled.div `
-background-color: #F1F0F0;
-height:68px;
+z-index:1;
+background-color: black;
+height:50px;
+width:100%;
+position:fixed;
+@media only screen and (min-width:320px) and (max-width:480px){
+    height:50px;
+}
 `
 
 
 export const NavItem = styled.div `
 text-align:center;
-line-height:68px;
+line-height:60px;
+font-size:1.3vw;
 .link{
-    color:black;
+    color:white;
 }
 
 :hover{
-    background-color:#DEDCDC;
+    
     .link{
-        font-size:16px;
+        font-size:1.6vw;
+        color:#DEDCDC
     }
+}
+
+@media only screen and (min-width:320px) and (max-width:480px){
+    line-height:50px;
 }
 `
 
 export const Logo = styled.div`
 text-align:center;
-font-size:25px;
+font-size:1.8vw;
 font-weight:bolder;
+color:white
 `
 //-----------------------------------------
 
@@ -61,27 +74,36 @@ export const IntroWapper = styled.div`
 width:100%;
 background-color:black;
 padding-top:5%;
-padding-bottom:5%;
-.title{
-    text-align:center;
-    color:white;
-    font-size:35px;
-}
+padding-bottom:2%;
+
 .description{
     margin:5% auto;
     text-align:center;
     color:white;
-    font-size:20px;
+    font-size:2vw;
+}
+
+@media only screen and (min-width:320px) and (max-width:480px){
+    padding-top:30%;
+    .description{
+        margin:23% auto;  
+        font-size:3vw;
+    }
+
+}
+
+@media only screen and (min-width:768px) and (max-width:1366px){
+    padding-top:10%;
 }
 `
 
 export const Tag = styled.div`
 color:white;
-font-size:20px;
-margin:30% auto 10% auto;
+font-size:2.5vw;
+margin:5% auto 15% auto;
 font-weight:bolder;
 :hover{
-    font-size:22px;
+    font-size:2.7vw;
     color:#BFBFBF;
 }
 `
@@ -91,7 +113,7 @@ font-weight:bolder;
 
 
 export const MemberWapper = styled(SectionWapper)`
-background-color:#BFBFBF;
+background-color:white;
 `
 
 
@@ -107,6 +129,14 @@ background-color:white;
 border-radius:10px;
 color:white;
 padding: 5% 5%;
+border-radius:4px;
+transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s, padding 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
+
+:hover{
+    transform: translateY(-0.25rem);
+
+}
+
 
 `
 export const ItemContent = styled.div`
@@ -119,9 +149,21 @@ color:black;
 .title{
     margin-bottom:5%;
     font-weight:bolder;
+    font-size:1.5vw;
 }
 .description{
     margin-bottom:5%;
+    font-size:1vw;
+}
+
+@media only screen and (min-width:320px) and (max-width:480px){
+    font-size:3vw;
+    .title{
+        font-size:4.5vw;
+    }
+    .description{
+        font-size:3.5vw;
+    }
 }
 
 `
@@ -164,14 +206,23 @@ background-color:white;
 
 export const BlogItemWapper = styled.div`
 margin:5% auto;
-width: 100%;
+width: 90%;
 padding-bottom:5%;
-//border:1px solid black;
-border-radius:25px;
+//border:1px solid white;
+border-radius:4px;
+box-shadow: rgba(46, 41, 51, 0.08) 0px 1px 2px, rgba(71, 63, 79, 0.08) 0px 2px 4px;
+transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s, padding 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
+
+:hover{
+    transform: translateY(-0.25rem);
+    box-shadow: rgba(46, 41, 51, 0.08) 0px 4px 8px, rgba(71, 63, 79, 0.16) 0px 8px 16px;
+
+}
 .date{
     margin:0% 10% 0 10%;
     font-weight:bold;
 }
+
 .title{
     margin:5% 10% 0 10%;
     font-weight:bolder;
@@ -190,9 +241,12 @@ border-radius:25px;
 
 button{
     margin:0% 10% 0 10%;
-
 }
 
+@media only screen and (min-width:320px) and (max-width:480px){
+
+}
+  
 `
 
 

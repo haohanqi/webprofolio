@@ -7,28 +7,36 @@ import {Row,Col} from 'antd'
 const ProjectItemSection =()=> {
     
         return (
-            <ProjectItemWapper>
+            <ProjectItemWapper id="project">
                  <Row tyle='flex' justify='center'>
-                     <Col span={12}> 
-                        <TitleWapper>
-                           <Title color='white' size='35px'  textAlign='left'>PROJECTS</Title>
-                           <span></span>
+                     <Col span={12} data-sal='zoom-in' data-sal-delay="400"> 
+                        <TitleWapper white>
+                           <Title color='white' size='3.5vw'  textAlign='left'>PROJECTS</Title>
+                           <span ></span>
                         </TitleWapper>
                      </Col>
                  </Row>
                  
-                 <Row tyle='flex' justify='space-around'>
-                      <Col span={8} align='center'>
+                 <Row tyle='flex' justify='space-around' >
+                      <Col xs={24} md={8} align='center' data-sal='flip-up' data-sal-delay="600">
                             <ProjectItem />
                       </Col>
                       
-                      <Col span={8} align='center'>
+                      <Col xs={24} md={8} align='center' data-sal='flip-up' data-sal-delay="750">
                              <ProjectItem />
                       </Col>
                       
-                      <Col span={8} align='center'>
+                      <Col xs={24} md={8} align='center' data-sal='flip-up' data-sal-delay="800">
                               <ProjectItem />
                       </Col>
+
+                      <Col xs={24} md={8} align='center' data-sal='flip-up' data-sal-delay="850">
+                              <ProjectItem />
+                      </Col>
+
+
+                     
+                      
                  </Row>
             </ProjectItemWapper>
         );

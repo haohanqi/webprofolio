@@ -20,7 +20,7 @@ const MemberSection =()=> {
             <MemberWapper id='team'>
                 
                 <Row type='flex' justify='start'>
-                     <Col span={12} data-sal='zoom-in' data-sal-delay="400" > 
+                     <Col span={12} data-sal='zoom-in' data-sal-delay="400" data-sal-duration="400" > 
                        <TitleWapper>
                           <Title color='black' textAlign='left'>TEAM MEMBERS</Title>
                           <span black></span>
@@ -30,14 +30,14 @@ const MemberSection =()=> {
                 
                 <Row type='flex' justify='space-around' align='middle'>   
                    
-                    <Col xs={18} md={6}align='center' data-sal='fade' data-sal-delay="600">
+                    <Col xs={18} md={6}align='center' data-sal='fade' data-sal-delay="600" data-sal-duration="700">
                         <IdentityCard title='Hao HanQi' />
                     </Col>
                     
-                    <Col xs={18} md={6} align='center' data-sal='fade' data-sal-delay="750">
+                    <Col xs={18} md={6} align='center' data-sal='fade' data-sal-delay="750" data-sal-duration="700">
                         <IdentityCard/>
                     </Col>
-                    <Col xs={18} md={6} align='center' data-sal='fade' data-sal-delay="850">
+                    <Col xs={18} md={6} align='center' data-sal='fade' data-sal-delay="850" data-sal-duration="700">
                         <IdentityCard title='HanQi Hao' description={<Description position='FrontEnd Developer' education='York University (CS degree)' ws='JS CSS React Gatsby'/>}/>
                     </Col>   
                 </Row>

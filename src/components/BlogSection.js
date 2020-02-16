@@ -8,7 +8,7 @@ const BlogSection =({data})=> {
         return (
             <BlogsWapper id='blogs'>
                <Row type="flex" justify="start">
-               <Col span={12} data-sal='zoom-in' data-sal-delay="400"> 
+               <Col span={12} data-sal='zoom-in' data-sal-delay="400" data-sal-duration="800"> 
                     <TitleWapper>
                         <Title color='black' size='4vw' textAlign='left'>BLOGS</Title>
                         <span style={{border:'1px solid black'}}></span>

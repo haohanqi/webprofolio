@@ -18,19 +18,19 @@ const ProjectItemSection =()=> {
                  </Row>
                  
                  <Row tyle='flex' justify='space-around' >
-                      <Col xs={24} md={8} align='center' data-sal='flip-up' data-sal-delay="600">
+                      <Col xs={24} md={8} align='center' data-sal='flip-up' data-sal-delay="600" data-sal-duration="600">
                             <ProjectItem />
                       </Col>
                       
-                      <Col xs={24} md={8} align='center' data-sal='flip-up' data-sal-delay="750">
+                      <Col xs={24} md={8} align='center' data-sal='flip-up' data-sal-delay="750" data-sal-duration="600">
                              <ProjectItem />
                       </Col>
                       
-                      <Col xs={24} md={8} align='center' data-sal='flip-up' data-sal-delay="800">
+                      <Col xs={24} md={8} align='center' data-sal='flip-up' data-sal-delay="800" data-sal-duration="600">
                               <ProjectItem />
                       </Col>
 
-                      <Col xs={24} md={8} align='center' data-sal='flip-up' data-sal-delay="850">
+                      <Col xs={24} md={8} align='center' data-sal='flip-up' data-sal-delay="850" data-sal-duration="600">
                               <ProjectItem />
                       </Col>
 

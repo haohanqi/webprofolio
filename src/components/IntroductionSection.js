@@ -15,12 +15,12 @@ const IntroductionSection = ()=>{
                <Row  type="flex" justify='center'>
                    <Col xs={16} md={12}> 
                    
-                     <div className='description' data-sal='fade' data-sal-delay="300">The Most Creative FrontEnd Developer Team.</div>
-                     <div className='description' data-sal='fade' data-sal-delay="350">Bring You The Best Products In Canada.  </div>
-                     <div className='description' data-sal='fade' data-sal-delay="400">Accuracy</div>
-                     <div className='description' data-sal='fade' data-sal-delay="450">Success</div>
-                     <div className='description' data-sal='fade' data-sal-delay="500">Hardwork</div>
-                     <div className='description' data-sal='fade' data-sal-delay="550">We Are Aniket Singini Harry</div>   
+                     <div className='description' data-sal='fade' data-sal-delay="300" data-sal-duration="300">The Most Creative FrontEnd Developer Team.</div>
+                     <div className='description' data-sal='fade' data-sal-delay="350" data-sal-duration="300">Bring You The Best Products In Canada.  </div>
+                     <div className='description' data-sal='fade' data-sal-delay="400" data-sal-duration="300">Accuracy</div>
+                     <div className='description' data-sal='fade' data-sal-delay="450" data-sal-duration="300">Success</div>
+                     <div className='description' data-sal='fade' data-sal-delay="500" data-sal-duration="300">Hardwork</div>
+                     <div className='description' data-sal='fade' data-sal-delay="550" data-sal-duration="3å00">We Are Aniket Singini Harry</div>   
                      
                    </Col>  
                </Row>

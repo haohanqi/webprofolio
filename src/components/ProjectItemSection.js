@@ -12,7 +12,7 @@ const ProjectItemSection =()=> {
                      <Col span={12} data-sal='zoom-in' data-sal-delay="400"> 
                         <TitleWapper white>
                            <Title color='white' size='3.5vw'  textAlign='left'>PROJECTS</Title>
-                           <span ></span>
+                           <span style={{border:`1px solid white`}}></span>
                         </TitleWapper>
                      </Col>
                  </Row>
@@ -33,10 +33,7 @@ const ProjectItemSection =()=> {
                       <Col xs={24} md={8} align='center' data-sal='flip-up' data-sal-delay="850" data-sal-duration="600">
                               <ProjectItem />
                       </Col>
-
-
                      
-                      
                  </Row>
             </ProjectItemWapper>
         );

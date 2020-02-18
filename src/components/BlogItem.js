@@ -5,12 +5,9 @@ import {BlogItemWapper} from './style'
 
 const BlogItem = ({data})=> {
     
-   
-
     return (
         <BlogItemWapper>
             
-
             <Row type='flex' justify='start'>
                <Col span={24} align='left'>
                    <div className='title'>{data ? data.node.frontmatter.title:""} </div>

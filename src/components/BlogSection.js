@@ -8,10 +8,10 @@ const BlogSection =({data})=> {
         return (
             <BlogsWapper id='blogs'>
                <Row type="flex" justify="start">
-               <Col span={12} data-sal='zoom-in' data-sal-delay="400" data-sal-duration="800"> 
-                    <TitleWapper>
-                        <Title color='black' size='4vw' textAlign='left'>BLOGS</Title>
-                        <span style={{border:'1px solid black'}}></span>
+                <Col span={12} data-sal='zoom-in' data-sal-delay="400" data-sal-duration="800"> 
+                     <TitleWapper>
+                            <Title color='black' size='4vw' textAlign='left'>BLOGS</Title>
+                            <span style={{border:'1px solid black'}}></span>
                     </TitleWapper>    
                 </Col>
                </Row>
@@ -24,7 +24,7 @@ const BlogSection =({data})=> {
                             <Col xs={24} md={14} data-sal='flip-up' data-sal-delay="600">
                                 <BlogItem data={item}/>
                             </Col>
-                         </Row>
+                        </Row>
                     )
                   })
                }

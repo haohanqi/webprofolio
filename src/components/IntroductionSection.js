@@ -20,7 +20,7 @@ const IntroductionSection = ()=>{
                      <div className='description' data-sal='fade' data-sal-delay="400" data-sal-duration="300">Accuracy</div>
                      <div className='description' data-sal='fade' data-sal-delay="450" data-sal-duration="300">Success</div>
                      <div className='description' data-sal='fade' data-sal-delay="500" data-sal-duration="300">Hardwork</div>
-                     <div className='description' data-sal='fade' data-sal-delay="550" data-sal-duration="3å00">We Are Aniket Singini Harry</div>   
+                     <div className='description' data-sal='fade' data-sal-delay="550" data-sal-duration="3å00">We Are Aniket Sangini Harry</div>   
                      
                    </Col>  
                </Row>
@@ -44,7 +44,9 @@ const IntroductionSection = ()=>{
                      
                     <Col span={4} align="center" data-sal='flip-up' data-sal-delay="700">
                       <Tag>
+                        <Link to="/#timeline">
                         <Icon type="code"/> TIMELINE
+                        </Link>
                       </Tag>
                     </Col>    
                     

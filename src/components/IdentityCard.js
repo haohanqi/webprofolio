@@ -8,17 +8,17 @@ const IdentityCard = ({imgSrc,avatarSrc,title,description})=> {
             hoverable='true'
             cover={
               <img
-                src="https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png"
+                src={imgSrc}
               />
             }
             actions={[
                 <Icon type="facebook" style={{fontSize:'20px'}} />,             
                 <Icon type="github" style={{fontSize:'20px'}}/>,
-              <Icon type="twitter"  style={{fontSize:'20px'}}/>,
+                <Icon type="twitter"  style={{fontSize:'20px'}}/>,
             ]}
           >
             <Meta
-              avatar={<Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" />}
+              avatar={<Avatar src={avatarSrc} />}
               title={title}
               description={description}
             />

@@ -41,7 +41,7 @@ position:fixed;
 export const NavItem = styled.div `
 text-align:center;
 line-height:60px;
-font-size:1.3vw;
+font-size:1.8vw;
 .link{
     color:white;
 }
@@ -49,7 +49,7 @@ font-size:1.3vw;
 :hover{
     
     .link{
-        font-size:1.6vw;
+        font-size:2vw;
         color:#DEDCDC
     }
 }
@@ -198,6 +198,29 @@ i{
 //-----------------------------------------------
 
 
+//TimeLine section--------------------------------
+export const TimelineWapper = styled(SectionWapper)`
+background-color:black
+`
+
+export const TimelineDescription = styled.p`
+font-size:2vw;
+color:white;
+
+:hover{
+    color:#3B5998;
+}
+
+
+@media only screen and (min-width:320px) and (max-width:480px){
+    font-size:3.5vw;
+}
+
+`
+
+//-------------------------------
+
+
 //blog section -----------------------------------------
 
 export const BlogsWapper = styled(SectionWapper)`
@@ -249,4 +272,39 @@ button{
   
 `
 
+//------------footer
 
+export const AboutUs = styled.div`
+text-align:center;
+color:white;
+
+`
+
+export const WorkLinks= styled.div`
+text-align:center;
+color:white;
+`
+export const ContactInfo = styled.div`
+text-align:center;
+color:white;
+`
+
+export const FooterTitle = styled.div`
+font-weight:bold;
+margin:5% auto;
+`
+
+export const FooterDescription = styled.p`
+width:90%;
+margin:3% auto;
+color:#ABABAB;
+text-align:center;
+:hover{
+    color:white;
+}
+
+i{
+    margin:0% 2%
+}
+
+`

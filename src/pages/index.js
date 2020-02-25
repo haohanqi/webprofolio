@@ -4,8 +4,10 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import IntroductionSection from "../components/IntroductionSection"
 import MemberSection from "../components/MemberSection"
+import TimelineSection from "../components/TimelineSection"
 import ProjectItemSection from "../components/ProjectItemSection"
 import BlogSection from "../components/BlogSection"
+import Footer from "../components/Footer"
 
 
 const IndexPage = ({data}) => (
@@ -13,10 +15,10 @@ const IndexPage = ({data}) => (
     <SEO title="Home" />
     <IntroductionSection/>
     <MemberSection/>
-    {/*Timelinesection*/}
+    <TimelineSection/>
     <ProjectItemSection/>
     <BlogSection data={data}/>
-    {/*FooterSection*/}
+    <Footer/>
   </Layout>
 )
 export const pageQuery = graphql`

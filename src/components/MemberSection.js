@@ -30,15 +30,30 @@ const MemberSection =()=> {
                 
                 <Row type='flex' justify='space-around' align='middle'>   
                    
-                    <Col xs={18} md={6}align='center' data-sal='fade' data-sal-delay="600" data-sal-duration="700">
-                        <IdentityCard title='Hao HanQi' />
+                    <Col xs={18} md={6} align='center' data-sal='fade' data-sal-delay="600" data-sal-duration="700">
+                        <IdentityCard 
+                        title='Aniket' 
+                        imgSrc='https://images.unsplash.com/photo-1565656898731-61d5df85f9a7?ixlib=rb-1.2.1&w=1000&q=80'
+                        avatarSrc='https://images.unsplash.com/photo-1511367461989-f85a21fda167?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80'
+                        description={<Description position='FrontEnd Developer' education='York University (CS degree)' ws='JS CSS React Gatsby'/>} />
                     </Col>
                     
                     <Col xs={18} md={6} align='center' data-sal='fade' data-sal-delay="750" data-sal-duration="700">
-                        <IdentityCard/>
+                        <IdentityCard 
+                         title='Sangini'
+                         imgSrc='https://images.unsplash.com/photo-1521158422-e44de3484714?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80' 
+                         avatarSrc='https://images.unsplash.com/photo-1474978528675-4a50a4508dc3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80'
+                         description={<Description position='FrontEnd Developer' education='York University (CS degree)' ws='JS CSS React Gatsby'/>}/>
+                         
                     </Col>
                     <Col xs={18} md={6} align='center' data-sal='fade' data-sal-delay="850" data-sal-duration="700">
-                        <IdentityCard title='HanQi Hao' description={<Description position='FrontEnd Developer' education='York University (CS degree)' ws='JS CSS React Gatsby'/>}/>
+                        <IdentityCard 
+                        title='HanQi Hao' 
+                        imgSrc='https://images.unsplash.com/photo-1516259762381-22954d7d3ad2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80' 
+                        avatarSrc='https://images.unsplash.com/photo-1529665253569-6d01c0eaf7b6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80'
+                        description={<Description position='FrontEnd Developer' 
+                                                  education='York University (CS degree)' 
+                                                  ws='JS CSS React Gatsby'/>}/>
                     </Col>   
                 </Row>
             </MemberWapper>

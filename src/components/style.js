@@ -6,9 +6,19 @@ export const TitleWapper = styled.div`
 margin: 5% 10%;
 span{
     margin-top:3%;
-    display:block;
+    display:inline-block;
     border: ${props => props.white ? "1px soild white" : "1px solid black"};
 }
+.avatar{
+    margin-top:0%;
+}
+
+@media only screen and (min-width:320px) and (max-width:480px){
+    width:100%;
+    margin:10% 5%
+}
+
+
 `
 export const Title = styled.div(props=>({
    color: props.color,
@@ -134,7 +144,6 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 250ms cu
 
 :hover{
     transform: translateY(-0.25rem);
-
 }
 
 
@@ -305,6 +314,95 @@ text-align:center;
 
 i{
     margin:0% 2%
+}
+
+`
+
+
+//Product Page
+export const ProductWapper = styled(SectionWapper)`
+background-color:white;
+padding-top:2%;
+padding-bottom:2%;
+overflow:hidden;
+@media only screen and (min-width:320px) and (max-width:480px){
+    padding-top:10%
+}
+`
+export const ProductImage = styled.div`
+float:left;
+margin-left:10%;
+width:40%;
+img{
+    display:block;
+    height:80%;
+    width:100%;
+    object-fit:fill;
+    box-shadow: rgba(46, 41, 51, 0.08) 0px 4px 8px, rgba(71, 63, 79, 0.16) 0px 8px 16px;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s, padding 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
+    :hover{
+        transform: translateY(-0.50rem);
+       
+    }
+
+}
+
+@media only screen and (min-width:320px) and (max-width:480px){
+    float:none;
+    width:90%;
+    margin-left:5%;
+    margin-right:5%;
+
+}
+
+`
+
+export const ProductComments = styled.div`
+float:right;
+margin-left:5%;
+margin-right:8%;
+padding-left:2%;
+padding-right:2%;
+width:35%;
+background-color:##F4F2F2;
+border-radius:5px;
+box-shadow: rgba(46, 41, 51, 0.08) 0px 4px 8px, rgba(71, 63, 79, 0.16) 0px 8px 16px;
+transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s, padding 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
+
+:hover{
+    transform: translateY(-0.50rem);
+   
+}
+
+@media only screen and (min-width:320px) and (max-width:480px){
+    float:none;
+    width:90%;
+    margin-left:5%;
+    margin-right:5%;
+
+}
+
+
+`
+
+export const RatingWapper =styled.div`
+margin:8% auto;
+text-align:center;
+.percentage{
+   margin:5% auto;
+   font-size:1.5vw;
+   width:45%;
+}
+
+div{
+    margin-bottom:3%;
+    font-weight:bold;
+}
+
+.counting{    
+    font-weight:bold;
+    color:#FB4BAE;
+    font-size:25px;
 }
 
 `

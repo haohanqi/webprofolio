@@ -9,13 +9,13 @@ const Header = ({ siteTitle }) => (
          <Col span={3} ><Logo>ASH</Logo></Col>
          <Col xs={3} md={4} offset={9} >
            <NavItem>
-               <Link className='link'>Home</Link>
+               <Link className='link' to='/'>Home</Link>
            </NavItem>
          </Col>
          
          <Col xs={3} md={4}>
             <NavItem>
-               <Link className='link'>Project</Link>
+               <Link className='link' to='/ProductPage/'>Project</Link>
             </NavItem>
          </Col>
          

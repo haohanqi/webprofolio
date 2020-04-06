@@ -30,7 +30,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     }
   `)
 
-  console.log(result)
+  //console.log(result.frontmatter.path)
 
   // Handle errors
   if (result.errors) {

@@ -17,21 +17,25 @@ const ProjectItemSection =()=> {
                      </Col>
                  </Row>
                  
-                 <Row tyle='flex' justify='space-around' >
+                 <Row tyle='flex' justify='space-around'>
                       <Col xs={24} md={8} align='center' data-sal='flip-up' data-sal-delay="600" data-sal-duration="600">
-                            <ProjectItem />
+                            <ProjectItem title='Manga Project' 
+                                         description='This is a manga project. Allow user to watch manga and animation online'
+                                         imgSrc='https://images.unsplash.com/photo-1548827752-6301e20b3be0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80'
+                                         githubLink='https://github.com/haohanqi/Apiassignment'
+                                         />
                       </Col>
                       
                       <Col xs={24} md={8} align='center' data-sal='flip-up' data-sal-delay="750" data-sal-duration="600">
-                             <ProjectItem />
+                             <ProjectItem/>
                       </Col>
                       
                       <Col xs={24} md={8} align='center' data-sal='flip-up' data-sal-delay="800" data-sal-duration="600">
-                              <ProjectItem />
+                              <ProjectItem/>
                       </Col>
 
                       <Col xs={24} md={8} align='center' data-sal='flip-up' data-sal-delay="850" data-sal-duration="600">
-                              <ProjectItem />
+                              <ProjectItem/>
                       </Col>
                      
                  </Row>

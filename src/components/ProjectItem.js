@@ -1,28 +1,30 @@
 import React  from 'react';
 import {ItemWapper,ItemContent,Cover,SocialLinks} from './style'
 import {Icon,Button} from 'antd'
+import {Link} from 'gatsby'
 
 
-const ProjectItem =({title,description,imgSrc})=>{
+const ProjectItem =({title,description,imgSrc,githubLink})=>{
    
         return (
             
             <ItemWapper>
                  <Cover >
-                       <img className='clearfix' src='//images.ctfassets.net/ntiequ7mc6q6/6nf3rNaaVaUqYcoAcciSeC/31c775ba08e2edf3ad52438d17625b67/Mate_Logo.png?w=450&fl=progressive&q=100' />
+                       <img className='clearfix' src={imgSrc} />
                  </Cover>
                  <ItemContent>
-                    <div className = 'title'> React Project </div>
-                    <div className = 'description'>This is a React project. Using React-Nav, styled-Component.daahsh hhs hshshdha</div>
+                    <div className = 'title'> {title} </div>
+                    <div className = 'description'>{description}</div>
                  </ItemContent>
 
                  <SocialLinks>
-                    <Icon type="codepen" />  
-                    <Icon type="github" /> 
+                    <Icon type="codepen" />
+                    <a href='https://github.com/haohanqi/Apiassignment' target="_blank"><Icon type="github" /></a>
                     <Icon type="gitlab" />
                 </SocialLinks>
-                <Button type="primary" style={{float:'right', margin:'0 10% 0 0'}}>Detail</Button>
-
+                <Link to='/ProductPage#harry'>
+                    <Button type="primary" style={{float:'right', margin:'0 10% 0 0'}}>Detail</Button>
+                </Link>
             </ItemWapper>
          
         );

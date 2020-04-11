@@ -39,7 +39,7 @@ background-color:black;
 export const NavWapper = styled.div `
 z-index:1;
 background-color: black;
-height:50px;
+height:60px;
 width:100%;
 position:fixed;
 @media only screen and (min-width:320px) and (max-width:480px){
@@ -244,11 +244,9 @@ padding-bottom:5%;
 border-radius:4px;
 box-shadow: rgba(46, 41, 51, 0.08) 0px 1px 2px, rgba(71, 63, 79, 0.08) 0px 2px 4px;
 transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s, padding 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
-
 :hover{
     transform: translateY(-0.25rem);
     box-shadow: rgba(46, 41, 51, 0.08) 0px 4px 8px, rgba(71, 63, 79, 0.16) 0px 8px 16px;
-
 }
 .date{
     margin:0% 10% 0 10%;

@@ -21,7 +21,7 @@ const Header = ({ siteTitle }) => (
          
          <Col xs={3} md={4}>
            <NavItem>
-              <Link className='link'>Contact</Link>
+              <Link className='link'  to='/contactUs'>Contact</Link>
            </NavItem>
           </Col>     
      </Row>     

@@ -1,11 +1,11 @@
 import React from 'react'
-import {Row,Col,Progress,Checkbox} from 'antd'
+import {Row,Col,Checkbox} from 'antd'
 import {RatingWapper} from './style'
 import CountUp from 'react-countup'
-import ProcessCycle from '../components/ProcessCycle'
+import ProcessCycle from './ProcessCycle'
 
 
-const checkbox =()=>{
+const CheckingBox =()=>{
     return(
       <RatingWapper>
          
@@ -17,11 +17,6 @@ const checkbox =()=>{
             <div><Checkbox />     Vodafone</div>
             <div><Checkbox/>     Idea</div>
            </Col>
-           
-           {/* <Col span={12}>
-            <div className='percentage'><ProcessCycle  valueStart='0' valueEnd='87' duration='5' color='#ACFE98'/></div>
-            <div>Google Store Rating</div>
-           </Col> */}
          
          </Row>
     </RatingWapper>
@@ -29,4 +24,4 @@ const checkbox =()=>{
     )
 }
 
-export default checkbox
+export default CheckingBox

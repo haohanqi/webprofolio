@@ -2,7 +2,7 @@ import React from 'react'
 import {TitleWapper,ProductWapper,ProductImage,ProductComments} from '../components/style'
 import Author from '../template/componments/Author'
 import {Comment,Avatar} from 'antd'
-import Checkbox from'../components/Checkbox'
+import CheckingBox from'../components/CheckingBox'
 
 
 const AniketProduct = ()=>{
@@ -17,7 +17,7 @@ const AniketProduct = ()=>{
            <ProductImage>
                 <img src='https://cdn.pixabay.com/photo/2015/03/27/13/16/cat-694730_960_720.jpg'></img>
                 <div>
-                   <Checkbox></Checkbox>
+                   <CheckingBox></CheckingBox>
                 </div>
            </ProductImage>
            <ProductComments>

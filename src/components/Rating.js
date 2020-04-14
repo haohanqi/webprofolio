@@ -1,5 +1,5 @@
 import React from 'react'
-import {Row,Col,Progress} from 'antd'
+import {Row,Col} from 'antd'
 import {RatingWapper} from './style'
 import CountUp from 'react-countup'
 import ProcessCycle from '../components/ProcessCycle'
@@ -50,11 +50,7 @@ const Rating =()=>{
           
          </Row>
 
-         <Row>
-            <Col></Col>
-            <Col></Col>
-            <Col></Col>
-         </Row>
+        
     </RatingWapper>
        
     )

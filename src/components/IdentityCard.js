@@ -9,6 +9,7 @@ const IdentityCard = ({imgSrc,avatarSrc,title,description})=> {
             cover={
               <img
                 src={imgSrc}
+                alt='cover'
               />
             }
             actions={[

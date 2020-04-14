@@ -1,8 +1,8 @@
 import React from 'react'
-import {TitleWapper,Title,ProductWapper,ProductImage,ProductComments} from '../components/style'
+import {TitleWapper,ProductWapper,ProductImage,ProductComments} from '../components/style'
 import Rating from '../components/Rating'
 import Author from '../template/componments/Author'
-import {Comment,Avatar,Row,Col} from 'antd'
+import {Comment,Avatar} from 'antd'
 
 
 const HarryProduct = ()=>{
@@ -15,7 +15,7 @@ const HarryProduct = ()=>{
             
         </TitleWapper>    
            <ProductImage>
-                <img src='https://images.unsplash.com/photo-1548827752-6301e20b3be0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80'></img>
+                <img alt='product image' src='https://images.unsplash.com/photo-1548827752-6301e20b3be0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80'></img>
                 <div>
                    <Rating></Rating>
                 </div>

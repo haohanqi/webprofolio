@@ -4,13 +4,13 @@ import {Icon,Button} from 'antd'
 import {Link} from 'gatsby'
 
 
-const ProjectItem =({title,description,imgSrc,githubLink})=>{
+const ProjectItem =({title,description,imgSrc,githubLink,name})=>{
    
         return (
             
             <ItemWapper>
                  <Cover >
-                       <img className='clearfix' src={imgSrc} />
+                       <img className='clearfix' src={imgSrc} alt='cover' />
                  </Cover>
                  <ItemContent>
                     <div className = 'title'> {title} </div>
@@ -19,10 +19,10 @@ const ProjectItem =({title,description,imgSrc,githubLink})=>{
 
                  <SocialLinks>
                     <Icon type="codepen" />
-                    <a href='https://github.com/haohanqi/Apiassignment' target="_blank"><Icon type="github" /></a>
+                    <a href={githubLink} target="_blank"><Icon type="github" /></a>
                     <Icon type="gitlab" />
                 </SocialLinks>
-                <Link to='/ProductPage#harry'>
+                <Link to={'/ProductPage#'+name}>
                     <Button type="primary" style={{float:'right', margin:'0 10% 0 0'}}>Detail</Button>
                 </Link>
             </ItemWapper>

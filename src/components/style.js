@@ -404,3 +404,52 @@ div{
 }
 
 `
+export const CardWrapper = styled.div `
+    float:right;
+    margin-left:2%;
+    margin-right:2%;
+    width:40%;
+    perspective: 700;
+    display:flex;
+`
+
+export const FlipperCard = styled.div `
+    width: 40% ;
+    height: 40%;
+    transition:all 0.7s ease;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    margin: 15% auto;
+
+    &:hover{
+        transform: rotateY(180deg);
+    }
+    .back{
+        transform: rotateY(180deg);
+        background: linear-gradient(45deg, red, blue);
+        color: white;
+        justify-content:center;
+        align-items:center;
+    }
+    .front{
+        background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+        background-size:cover;
+        font-weight:bolder;
+        font-size:15px;
+        color: blue;
+        align-items:center;
+        
+    }
+
+    .front, .back{
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        border-radius:10px;
+        backface-visibility:hidden;
+        display: flex;
+        align-items:center;
+        justify-content:center;
+        box-shadow: 0px 3px 6px gray;
+    }
+`

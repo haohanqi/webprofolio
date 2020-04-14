@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import {MemberWapper,Title,TitleWapper} from './style'
 import {Row,Col} from 'antd'
 import IdentityCard from './IdentityCard'
@@ -8,7 +8,6 @@ const MemberSection =()=> {
     const Description = ({position,education,ws})=>{
         return (
             <p style={{textAlign:'left'}}>
-            
                   <b>Position</b>: {position}<br/><br/> 
                   <b>Education</b>: {education} <br/><br/>
                   <b>Work Skills</b>: {ws}
@@ -31,7 +30,7 @@ const MemberSection =()=> {
                 <Row type='flex' justify='space-around' align='middle'>   
                    
                     <Col xs={18} md={6} align='center' data-sal='fade' data-sal-delay="600" data-sal-duration="700">
-                        <IdentityCard 
+                    <IdentityCard 
                         title='Aniket' 
                         imgSrc='https://images.unsplash.com/photo-1565656898731-61d5df85f9a7?ixlib=rb-1.2.1&w=1000&q=80'
                         avatarSrc='https://images.unsplash.com/photo-1511367461989-f85a21fda167?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80'

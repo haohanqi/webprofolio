@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import {Row,Col,Avatar} from 'antd'
 import '../style.css' 
 const Author =({name,avatarSrc})=> {

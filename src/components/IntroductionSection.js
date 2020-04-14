@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import {IntroWapper,Title,Tag} from './style'
 import {Row,Col,Icon} from 'antd'
 import { Link } from 'gatsby';

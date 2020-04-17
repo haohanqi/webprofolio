@@ -44,10 +44,6 @@ const AniketProduct = ()=>{
                           <li>Good compared to webex</li>
                         </ul> 
                    </p>}>
-                      
-
-                   
-
                </Comment>       
            </ProductComments>
         

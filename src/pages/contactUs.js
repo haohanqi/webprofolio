@@ -18,18 +18,18 @@ class contactUs extends Component {
       const name =  document.getElementById("name").value;
       const email = document.getElementById("email").value;
       const message = document.getElementById("message").value;
-      console.log(name);
-      console.log(email);
-      console.log(message);
+      // console.log(name);
+      // console.log(email);
+      // console.log(message);
       axios({
        method: "POST", 
        url:"http://localhost:3002/send", 
        data: {name: name, email: email, message: message}
        
       }).then((response)=>{
-        console.log(response.data.status);
-        console.log(response.data.name);
-        console.log(response.data.message);
+        // console.log(response.data.status);
+        // console.log(response.data.name);
+        // console.log(response.data.message);
         
         if (response.data.msg === 'success'){
           alert("Message Sent."); 

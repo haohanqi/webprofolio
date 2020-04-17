@@ -7,7 +7,7 @@ import Header from '../components/header'
 import Layout from '../components/layout'
 
 export default function Blog ({data}){
-    console.log(data)
+    //console.log(data)
     const {markdownRemark}=data
     const {html,frontmatter} = markdownRemark
     return (

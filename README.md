@@ -41,7 +41,8 @@ _Have another more specific idea? You may want to check out our vibrant collecti
     Open the `my-default-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
 
 1.  **Start backend server**
- node app.js
+
+     node app.js
 
 
 ## 💫 Deploy

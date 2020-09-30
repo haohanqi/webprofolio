@@ -12,12 +12,12 @@ const Rating =()=>{
          <Row type='flex' justify="center" data-sal='flip-up' data-sal-delay="650">
            <Col span={12}>
             <div className='percentage'><ProcessCycle  valueStart='0' valueEnd='82' duration='5' /></div>
-            <div>App Store Rating</div>
+            <div>Frontend Skill</div>
            </Col>
            
            <Col span={12}>
             <div className='percentage'><ProcessCycle  valueStart='0' valueEnd='87' duration='5' color='#ACFE98'/></div>
-            <div>Google Store Rating</div>
+            <div>Design Skill</div>
            </Col>
          
          </Row>

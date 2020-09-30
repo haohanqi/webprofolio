@@ -1,18 +1,21 @@
-import React from "react"
-
+import React,{useEffect} from "react"
+import NavHeader from '../components/NavHeader'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import HarryProduct from '../components/HarryProduct'
-import SanginiProduct from '../components/SanginiProduct'
-import AniketProduct from '../components/AniketProduct'
+import ProductIntro from '../components/ProductIntro'
+const SecondPage = () => {
 
-const SecondPage = () => (
-  <Layout>
-  <SEO title="Product Page" />
-  <HarryProduct/>
-  <SanginiProduct/>
-  <AniketProduct/>
-  </Layout>
-)
+  return (
+    <Layout>
+      <SEO title="Product Page" />
+      <NavHeader color="black" />
+      <ProductIntro />
+      <HarryProduct />
+    </Layout>
+  )
+}
+  
+  
 
 export default SecondPage

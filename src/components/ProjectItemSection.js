@@ -18,7 +18,7 @@ const ProjectItemSection =()=> {
                  </Row>
                  
                  <Row tyle='flex' justify='space-around'>
-                      <Col xs={24} md={8} align='center' data-sal='flip-up' data-sal-delay="600" data-sal-duration="600">
+                      <Col xs={24} md={8} align='center' >
                             <ProjectItem title='Manga Project' 
                                          name='Harry'
                                          description='This is a manga project. Allow user to watch manga and animation online'
@@ -27,7 +27,7 @@ const ProjectItemSection =()=> {
                                          />
                       </Col>
                       
-                      <Col xs={24} md={8} align='center' data-sal='flip-up' data-sal-delay="750" data-sal-duration="600">
+                      <Col xs={24} md={8} align='center' >
                             <ProjectItem title='Holiday Calendar App'
                                          name='Sangini'
                                          description='This is an Android App, which allows user to check holidays on Calender.'
@@ -35,7 +35,7 @@ const ProjectItemSection =()=> {
                                          githubLink='https://github.com/sanginigupta/Holiday_Calender_App' />
                       </Col>
                       
-                      <Col xs={24} md={8} align='center' data-sal='flip-up' data-sal-delay="800" data-sal-duration="600">
+                      <Col xs={24} md={8} align='center'>
                                  <ProjectItem title='Zoom Project' 
                                               name='aniket'
                                               description='This is a zoom project. Allow user to share screen and present the presentation.'

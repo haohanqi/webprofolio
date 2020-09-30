@@ -18,10 +18,9 @@ const BlogSection =({data})=> {
                
                {
                   data.allMarkdownRemark.edges.map((item)=>{
-                     // console.log(item)
                       return (
-                        <Row type="flex" justify="center">
-                            <Col xs={24} md={14} data-sal='flip-up' data-sal-delay="600">
+                          <Row type="flex" justify="center">
+                            <Col xs={24}  md={14}  align="center">
                                 <BlogItem data={item}/>
                             </Col>
                         </Row>

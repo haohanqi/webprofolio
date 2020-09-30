@@ -1,12 +1,21 @@
 import React from 'react';
-import {IntroWapper,Title,Tag} from './style'
+import { IntroWapper, Title, Tag, Personal, SocialMediaBar, PersonalImage, PersonalContent, SocialIcon, ContactButton} from './style'
 import {Row,Col,Icon} from 'antd'
+import {ArrowRightOutlined} from '@ant-design/icons'
 import { Link } from 'gatsby';
+import selfImage from '../../src/images/self.svg'
+import facebook from '../../src/images/facebook.png'
+import ins from '../../src/images/ins.png'
+import linkin from '../../src/images/linkin.png'
+import github from '../../src/images/github.png'
+
+
 const IntroductionSection = ()=>{
         return (
-            <IntroWapper>
-               
-               <Row  type="flex" justify='center' >
+ 
+    <IntroWapper>
+            
+    {  /* <Row  type="flex" justify='center' >
                    <Col span={10}>                    
                        <Title color="white"  textAlign='center'>WE ARE ASH</Title>
                    </Col>
@@ -57,8 +66,91 @@ const IntroductionSection = ()=>{
                         </Link>
                       </Tag>
                     </Col>    
-               </Row>
-      
+        </Row> */}
+
+            
+        <Personal>
+          <PersonalImage src={selfImage}/>
+          <PersonalContent>
+            "Hello EveryOne.
+
+            I am Hanqi Hao. 
+            
+            WEB DEVELOPER. 
+
+            UI / UX DEVELOPER.
+            
+            MOBILE APP DEVELOPER."
+          </PersonalContent>
+              <ContactButton style={{float:"left",marginTop:"40px",marginLeft:"3%"}}>
+                Contact Me
+                <div className="iconWrapper">
+                  <ArrowRightOutlined className="icon"/>
+                </div>
+              </ContactButton>
+        </Personal>
+            
+        <SocialMediaBar>
+          <SocialIcon>
+             <a>
+               <img src={github}/> 
+             </a>
+          </SocialIcon>
+        
+          <SocialIcon>
+             <a>
+              <img src={facebook}/> 
+            </a> 
+          </SocialIcon>
+
+
+          <SocialIcon>
+             <a>
+              <img src={linkin}/> 
+            </a> 
+          </SocialIcon>
+          
+          <SocialIcon>
+             <a>
+              <img src={ins}/> 
+            </a>
+          </SocialIcon>
+       
+       </SocialMediaBar>
+
+        <Row type="flex" justify='space-around' style={{width:"100%"}} >
+                    <Col span={4} align="center" data-sal='flip-up' data-sal-delay="600"> 
+                       <Tag>
+                          <Link to="/#team">
+                          <span className="text"> -> Skills </span>
+                          </Link>
+                       </Tag>
+                    </Col>
+                     
+                    <Col span={4} align="center" data-sal='flip-up' data-sal-delay="650">
+                      <Tag>
+                        <Link to="/#project">
+                         <span className="text"> -> PROJECT</span>
+                        </Link>
+                      </Tag>
+                    </Col>
+                     
+                    <Col span={4} align="center" data-sal='flip-up' data-sal-delay="700">
+                      <Tag>
+                        <Link to="/#timeline">
+                        <span className="text">-> TIMELINE</span>
+                        </Link>
+                      </Tag>
+                    </Col>    
+                    
+                    <Col span={4} align="center" data-sal='flip-up' data-sal-delay="750">
+                      <Tag>
+                        <Link to="/#blogs">
+                        <span className="text"> -> BLOGS</span>
+                        </Link>
+                      </Tag>
+                    </Col>    
+        </Row> 
                 
             </IntroWapper>
         );

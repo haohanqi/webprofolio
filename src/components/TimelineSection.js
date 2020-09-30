@@ -18,29 +18,23 @@ const TimelineSection = ()=>{
       <Col>
         <Timeline mode='alternate' style={{margin:'5% auto',width:'80%',color:'white',fontSize:'20px'}}>
             <Timeline.Item data-sal='fade' data-sal-delay="600" data-sal-duration="700">
-                <TimelineDescription>Build up the team at 2020-01-10</TimelineDescription>
+                <TimelineDescription>2010-2013 ​As a professional volleyball athlete represented China to attend U15 U18 U20 </TimelineDescription>
             </Timeline.Item>
             
             <Timeline.Item color="green" data-sal='fade' data-sal-delay="600" data-sal-duration="700">
-                <TimelineDescription>First App design set up at 2020-01-15</TimelineDescription>
+                 <TimelineDescription>2014-2018 study Computer Science in York University  </TimelineDescription>
+            </Timeline.Item>
+
+            <Timeline.Item color="green" data-sal='fade' data-sal-delay="600" data-sal-duration="700">
+                <TimelineDescription>2018.6-2018.9 intership in BigTree Tech (China) as a frontend developer </TimelineDescription>
             </Timeline.Item>
             
             <Timeline.Item dot={<Icon type="clock-circle-o" />} data-sal='fade' data-sal-delay="700" data-sal-duration="700">
-                <TimelineDescription> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
-                beatae vitae dicta sunt explicabo.</TimelineDescription>
+                <TimelineDescription> 2018.12 - 2019.12 Working in a blockchain tech start-up comapany as a frontend developer and blockchain developer.</TimelineDescription>
             </Timeline.Item>
             
             <Timeline.Item color="red" data-sal='fade' data-sal-delay="600" data-sal-duration="800">
-                <TimelineDescription>Web and App lunched at 2020-2-24</TimelineDescription>
-            </Timeline.Item>
-            
-            <Timeline.Item data-sal='fade' data-sal-delay="600" data-sal-duration="900">
-                <TimelineDescription>Future App development meeting at 2020-03-05</TimelineDescription>
-            </Timeline.Item>
-            
-            <Timeline.Item dot={<Icon type="clock-circle-o"  />} data-sal='fade' data-sal-delay="1000" data-sal-duration="700">
-                <TimelineDescription>Technical testing at 2020-03-10</TimelineDescription>
+                <TimelineDescription>2019.12 - 2020.8 study post-graduate Mobile App Development in Georgian College </TimelineDescription>
             </Timeline.Item>
         </Timeline>
       </Col>

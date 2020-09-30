@@ -8,13 +8,8 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-
 import Header from "./header"
-
-if (typeof window !== "undefined") {
-  // eslint-disable-next-line global-require
-  require("smooth-scroll")('a[href*="#"]')
-}
+import NavHeader from './NavHeader'
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -28,20 +23,17 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <>
-      <Header siteTitle={data.site.siteMetadata.title} />
+    <div style={{ width: "100%"}}>
+      <NavHeader color={"black"} hiddenTitle={true}/>
       <div
         style={{
-          margin: `0 auto`,
-          maxWidth: `100%`,
+          margin:"0 auto",
+          width: "100%",
         }}
       >
         <main>{children}</main>
-        
-        
-       
       </div>
-    </>
+    </div>
   )
 }
 

@@ -1,4 +1,67 @@
 {
-  "aboutTitle": "About Me ",
-  "aboutMe": "Hi! My name is Hanqi Hao, recently graduated from post-graduate program.\n I mainly focus on frontend development for website and mobile. And also I have one year work experience with blockchain technology."
+  "aboutSection": {
+    "aboutTitle": "About Me",
+    "aboutMe": "Hi! My name is Hanqi Hao, recently graduated from post-graduate program. I mainly focus on frontend development for website and mobile. And also I have one year work experience with blockchain technology."
+  },
+  "workSection": {
+    "workTitle": "What I Do",
+    "workDes": "I have a strong passion for design and new technology. I mainly focus on Frontend Development for website and mobile App. But I also have a good knowledge with Backend, understanding REST api, JWT.",
+    "workSkills": [
+      {
+        "workSkillCate": "Frontend Developer",
+        "workSkill": [
+          {
+            "workSkillDes": "Having a solid skill with HTML, CSS and JS. Comfortable with using RESTful API and GraphQL\n"
+          },
+          {
+            "workSkillDes": "Familiar with Responsive Design.\n"
+          },
+          {
+            "workSkillDes": "Familiar with React, Redux​ (also middleware such as ​redux thunk​)."
+          },
+          {
+            "workSkillDes": "Understanding BDD​,​TDD​ way to test and develop code."
+          }
+        ]
+      },
+      {
+        "workSkillCate": "UI / UX Design",
+        "workSkill": [
+          {
+            "workSkillDes": "Strong Passion and Creativity."
+          },
+          {
+            "workSkillDes": "Familiar with Adobe XD design tool."
+          },
+          {
+            "workSkillDes": "Familiar with Desktop and Mobile design"
+          },
+          {
+            "workSkillDes": "Having a solid skill to achieve Animation"
+          },
+          {
+            "workSkillDes": "Understanding ​Client requirements and Strong communication Skills"
+          }
+        ]
+      },
+      {
+        "workSkillCate": "Mobile App Developer",
+        "workSkill": [
+          {
+            "workSkillDes": "Familiar with React Native and Swift UI."
+          },
+          {
+            "workSkillDes": "Having a strong skill with React-Navigation​"
+          },
+          {
+            "workSkillDes": "Able to develop Cross Platform App"
+          }
+        ]
+      }
+    ]
+  },
+  "skillSection": {
+    "skillTitle": "Skills",
+    "skillDes": "I use number of tools and library to make development much easier. I usually use Adobe XD to do wireframes, mock up for website and mobile app. React and React Native is my favourite frontend framework which I use daily. Ant Design is my favourite UI library, in my projects there are a lot of UI come from it."
+  }
 }

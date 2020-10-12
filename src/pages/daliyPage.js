@@ -20,7 +20,7 @@ const DaliyPage = () => {
 			scrollTrigger:{
 				trigger:".daily-container",
 				pin:true,
-				scrub:3,
+				scrub:0.6,
 				snap:1/(sections.length-1)
 			}
 		})
@@ -36,7 +36,7 @@ const DaliyPage = () => {
 					<DailyIntro/>
 				</DailySection>
 
-				<DailySection backgroundColor="white" >
+				<DailySection backgroundColor="black" >
 					<DailyDog/>
 				</DailySection>
 

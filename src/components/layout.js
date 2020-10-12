@@ -23,8 +23,8 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <div style={{ width: "100%"}}>
-      <NavHeader color={"black"} hiddenTitle={true}/>
+    <div className="main" style={{ width: "100%"}}>
+      <NavHeader color="black" />
       <div
         style={{
           margin:"0 auto",

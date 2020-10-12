@@ -31,7 +31,7 @@ const NavHeader = ({color,hiddenTitle}) => {
 			scrollTrigger: {
 				trigger: ".nav-container",
 				toggleActions: "play none none reverse",
-				start: "top top-=200",
+				start: "top top-=50",
 				scrub: 1,
 			},
 			ease: "power4.out",
@@ -42,15 +42,14 @@ const NavHeader = ({color,hiddenTitle}) => {
 		
 		if(open){
 			//hum menu animation
-			t2.to(".navHum-close .bar",{width:"0px"})
+			t2.to(".navHum-close .cbar",{width:"0px"})
 			.to(".navHum-open",0, { display: "flex"})
-			.to(".navHum-open .bar", {width:"3px",height:"30px"})
+			.to(".navHum-open .bar", {width:"3px",height:"33px"})
 			.to(".navHum-close", { display:"none"})
 
 			//open Nav animation
 			t1.to(".NavMenuContainer",0.9,{
 				display: "block",
-				opacity:100,
 				height: navMenuContainer,
 				ease: "power4.in",
 				delay:-0.6
@@ -68,11 +67,10 @@ const NavHeader = ({color,hiddenTitle}) => {
 		}else{
 
 			t2.to(".navHum-open .bar", { height: "0px"})
-			.to(".navHum-close", 0, { display: "flex"})
-			.to(".navHum-close .bar", { width: "30px",height:"3px" })
 			.to(".navHum-open", { display: "none" })
-
-
+			.to(".navHum-close", 0, { display: "flex"})
+			.to(".navHum-close .cbar", { width: "33px",height:"3px" })
+			
 			t1.to(".menu", 0.3, {
 				opacity: "0",
 				ease: "power4.out",
@@ -92,10 +90,7 @@ const NavHeader = ({color,hiddenTitle}) => {
 				display:'none',
 				delay:-0.7
 			})
-
 		}
-
-
 	},[open])
 
 	return (
@@ -103,22 +98,22 @@ const NavHeader = ({color,hiddenTitle}) => {
 			<Row type="flex" justify="space-around" align="middle">
 				{
 					hiddenTitle ? <Col xl={10} lg={10} md={10} sm={11} xs={11}></Col> : <Col xl={10} lg={10} md={10} sm={11} xs={11}>
-						<span className="name" style={{ color: color }}>Hello ! I'm Harry.</span>
+						<span className="name" style={{ color: color }}>HHQ</span>
 					</Col>
 				}
 
 				<Col span={10} align="right">
 					{
-						open ? <NavHumOpen className='navHum-open' color={color} onClick={()=>{ setOpen(!open) }}>
+						open ? <NavHumOpen className='navHum-open' onClick={()=>{ setOpen(!open) }}>
 							<div className="bar"></div>
 							<div className="bar"></div>
 							<div className="bar"></div>
 						</NavHumOpen> 
 						:
-						<NavHumClose className='navHum-close' color={color} onClick={()=>{setOpen(!open)}}>
-							<div className="bar"></div>
-							<div className="bar"></div>
-							<div className="bar"></div>
+						<NavHumClose className='navHum-close' onClick={()=>{setOpen(!open)}}>
+							<div className="cbar"></div>
+							<div className="cbar"></div>
+							<div className="cbar"></div>
 						</NavHumClose>
 					}
 					

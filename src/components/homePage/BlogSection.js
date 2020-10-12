@@ -1,6 +1,6 @@
 import React from 'react';
-import {BlogsWapper,Title,TitleWapper} from './style'
-import BlogItem from "../components/BlogItem"
+import {BlogsWapper,Title,TitleWapper} from '../style'
+import BlogItem from "./BlogItem"
 import {Row,Col} from 'antd'
 
 const BlogSection =({data})=> {
@@ -8,10 +8,9 @@ const BlogSection =({data})=> {
         return (
             <BlogsWapper id='blogs'>
                <Row type="flex" justify="start">
-                <Col span={12} data-sal='zoom-in' data-sal-delay="400" data-sal-duration="800"> 
+                <Col xl={12} lg={12} md={12} sm={24} xs={24} data-sal='zoom-in' data-sal-delay="400" data-sal-duration="800"> 
                      <TitleWapper>
-                            <Title color='black' size='4vw' textAlign='left'>BLOGS</Title>
-                            <span style={{border:'1px solid black'}}></span>
+                            <Title color='black' textAlign='left'>BLOGS</Title>
                     </TitleWapper>    
                 </Col>
                </Row>
@@ -19,11 +18,11 @@ const BlogSection =({data})=> {
                {
                   data.allMarkdownRemark.edges.map((item)=>{
                       return (
-                          <Row type="flex" justify="center">
-                            <Col xs={24}  md={14}  align="center">
+                          <Row type="flex" justify="center" style={{marginBottom:'60px'}}>
+                              <Col lg={14} xl={14} md={14} xs={24} sm={24}  align="center">
                                 <BlogItem data={item}/>
-                            </Col>
-                        </Row>
+                             </Col>
+                         </Row>
                     )
                   })
                }

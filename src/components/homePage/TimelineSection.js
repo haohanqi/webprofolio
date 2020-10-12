@@ -1,22 +1,21 @@
 import React from 'react'
 import {Timeline,Icon,Row,Col} from 'antd'
-import {TimelineWapper,TitleWapper,Title,TimelineDescription} from './style'
+import {TimelineWapper,TitleWapper,Title,TimelineDescription} from '../style'
 const TimelineSection = ()=>{
 
     return(
-    <TimelineWapper id='timeline'>
+    <TimelineWapper id='timeline' backgroundColor="#f9f9f9" >
     <Row type='flex' justify='start'>
-        <Col span={12} data-sal='zoom-in' data-sal-delay="400" data-sal-duration="400" > 
+        <Col xl={12} lg={12} md={12} sm={24} xs={24} data-sal='zoom-in' data-sal-delay="400" data-sal-duration="400" > 
         <TitleWapper>
-            <Title color='white' textAlign='left'>TimeLine</Title>
-            <span style={{border:`1px solid white`}}></span>
+            <Title color='black' textAlign='left'>TimeLine</Title>
         </TitleWapper> 
        </Col>
     </Row>
 
     <Row>
       <Col>
-        <Timeline mode='alternate' style={{margin:'5% auto',width:'80%',color:'white',fontSize:'20px'}}>
+        <Timeline mode='alternate' style={{margin:'5% auto',width:'80%',fontSize:'20px'}}>
             <Timeline.Item data-sal='fade' data-sal-delay="600" data-sal-duration="700">
                 <TimelineDescription>2010-2013 ​As a professional volleyball athlete represented China to attend U15 U18 U20 </TimelineDescription>
             </Timeline.Item>

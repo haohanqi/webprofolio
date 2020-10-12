@@ -9,8 +9,8 @@ const DailyPageOverlary = () => {
 			visibility: "visible"
 		})
 
-		let t1 = gsap.timeline()
-		t1.from(".process", 1, { width: 0 })
+		let t2 = gsap.timeline()
+		t2.from(".process", 1, { width: 0 })
 			.from(".overlay-text", 0.3, { display: 'none' })
 			.to(".process",0,{display:'none'})
 			.to(".top-overlay", 0.6, { y: "-100%" })

@@ -2,7 +2,7 @@ import React from 'react'
 import {Row,Col} from 'antd'
 import {RatingWapper} from './style'
 import CountUp from 'react-countup'
-import ProcessCycle from '../components/ProcessCycle'
+import ProcessCycle from '../../components/ProcessCycle'
 
 
 const Rating =()=>{

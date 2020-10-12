@@ -1,18 +1,17 @@
 import React from 'react'
 import { Row, Col, Divider, Tabs } from 'antd'
 import { CheckCircleFilled } from '@ant-design/icons'
-import { SectionWapper, TitleWapper, Title, ExperienceWrapper } from './style'
-import web from '../images/web.svg'
-import data from '../images/data.svg'
+import { SectionWapper, TitleWapper, Title, ExperienceWrapper } from '../style'
+import web from '../../images/web.svg'
+import data from '../../images/data.svg'
 
 const Experience = ()=>{
 	return (
 		<ExperienceWrapper>
 			<Row type='flex' justify='start'>
-				<Col span={12} data-sal='zoom-in' data-sal-delay="400" data-sal-duration="400" >
+				<Col xl={12} lg={12} md={12} sm={24} xs={24} data-sal='zoom-in' data-sal-delay="400" data-sal-duration="400" >
 					<TitleWapper>
 						<Title color='black' textAlign='left'>Working Experience</Title>
-						<span></span>
 					</TitleWapper>
 				</Col>
 			</Row>

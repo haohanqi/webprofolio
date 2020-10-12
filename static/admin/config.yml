@@ -15,3 +15,17 @@ collections:
       - { name: date, label: Date, widget: datetime }
       - { name: title, label: Title }
       - { name: body, label: Body, widget: markdown }
+  - name: pages
+    label: Pages
+    files:
+      - file: src/pageContent/index.md
+        name: index
+        label: IndexPage
+        fields: 
+          - { name: templateKey, label: Template Key, widget: hidden, default: index-page }
+          - { name: aboutTitle, label: AboutTitle, widget: string }
+          - { name: aboutMe, label: AboutMe, widget: text }
+
+
+
+

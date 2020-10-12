@@ -2,24 +2,26 @@ import React,{useEffect} from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import NavHeader from '../components/NavHeader'
-import IntroductionSection from "../components/IntroductionSection"
-import SkillSection from '../components/SkillSection'
-import JobSection from '../components/JobSection'
-import TimelineSection from "../components/TimelineSection"
-import Experience from '../components/Experience'
-import BlogSection from "../components/BlogSection"
+import IntroductionSection from "../components/homePage/IntroductionSection"
+import SkillSection from '../components/homePage/SkillSection'
+import JobSection from '../components/homePage/JobSection'
+import TimelineSection from "../components/homePage/TimelineSection"
+import Experience from '../components/homePage/Experience'
+import BlogSection from "../components/homePage/BlogSection"
 import Footer from "../components/Footer"
-import Overlay from "../components/Overlay"
-import IntroOverlay from '../components/IntoOverlay'
+import Overlay from "../components/homePage/Overlay"
+import IntroOverlay from '../components/homePage/IntroOverlay'
 import gsap from 'gsap'
 
 
 const IndexPage = ({data}) =>{
 
   useEffect(()=>{
-    const t1 = gsap.timeline()
+    let t1 = gsap.timeline()
 
-    t1.from('.overlay-text',1.4,{
+    t1.set(document.body,{overflow:'hidden'})
+    .to(".main",0,{overflowY:'hidden'})
+    .from('.overlay-text',1.4,{
       y:"100",
       ease:"power4.out",
       skewY:7,
@@ -47,8 +49,15 @@ const IndexPage = ({data}) =>{
       width:0,
       display: "none",
       ease: "expo.inOut",
-    })
-  })
+    }).from(".intro-background-title", 0.6,{ opacity: 0, x: 200, ease: 'power4.in' })
+      .from(".intro-background-img",0.6,{opacity:0, y:-100, ease:'power4.in'})
+      .from(".intro-background-content", 0.6, { opacity: 0, x: -200, ease: 'power4.in' })
+      .from(".next-button-container", 1 ,{ opacity:0, border:'1px solid black', ease:'power4.in'})
+      .from(".icon-text", 0.6, { opacity: 0, y: 30, ease: 'power4.in' })
+      .from(".icon", 0.6, { opacity: 0, y: -30, ease: 'power4.in' })
+      .from(".next-button-container", 0.6, { y: -100, repeat:2, yoyo:true})
+
+})
 
   return (
     (
@@ -56,8 +65,7 @@ const IndexPage = ({data}) =>{
         <SEO title="Home" />
         <Overlay />
         <IntroOverlay/>
-        <NavHeader color="black" hiddenTitle={false}/>
-        <IntroductionSection />
+        <IntroductionSection/>
         <JobSection />
         <SkillSection />
         <TimelineSection />

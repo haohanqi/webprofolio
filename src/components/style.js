@@ -6,6 +6,8 @@ export const TitleWapper = styled.div`
 width:100%;
 box-sizing:border-box;
 margin: 5% 10%;
+font-weight:900;
+color:black;
 span{
     margin-top:3%;
     display:inline-block;
@@ -23,14 +25,20 @@ span{
 `
 export const Title = styled.div(props=>({
    color: props.color,
-   fontSize: `3vw`,
+   fontSize: `1.8rem`,
    textAlign:props.textAlign,
    margin:props.margin,
 }))
 
 export const SectionWapper = styled.div`
 width:100%;
-background-color:${props=>props.color};
+background-color:${props=>props.backgroundColor};
+box-sizing:border-box;
+overflow:hidden;
+padding-top:5%;
+padding-bottom:5%;
+padding-left:5%;
+padding-right:5%;
 `
 
 export const ContactButton = styled.div`
@@ -75,27 +83,45 @@ padding-right:5px;
     }
 }
 `
+export const BasicButton = styled.div`
+    width:100%;
+    cursor:default;
+    font-size:0.85rem;
+    margin-top:30px;
+    color:black;
+    div{
+        width:140px;
+        height:40px;
+        border:1px solid black;
+        text-align:center;
+        line-height:40px;
+        transition:0.4s ease;
+        &:hover{
+            color:white;
+            background-color:black;
+        }
+    }
+`
 
 //----------------------------------------
 
 
 export const NavHeaderWrapper = styled.div`
 width:100%;
-z-index:10;
+z-index:30;
 position:fixed;
 padding-top:5px;
 padding-bottom:5px;
 top:0;
 left:0;
-background-color:white;
 .name{
    vertical-align:middle;
-   font-size:1.2rem;
+   font-size:1.5rem;
    font-weight:900;
 }
 @media only screen and (min-width:320px) and (max-width:480px){
     .name{
-        font-size:1rem;
+        font-size:1.3rem;
     }
 }
 
@@ -109,10 +135,10 @@ justify-content:space-around;
 align-items:center;
 width:30px;
 height:30px;
-.bar{
+.cbar{
     height:0px;
     width:0px;
-    background-color:${props=>props.color};
+    background-color:black;
 }
 `
 export const NavHumOpen = styled.div`
@@ -125,7 +151,7 @@ height:30px;
 .bar{
     height:0px;
     width:0px;
-    background-color:${props => props.color};
+    background-color:black;
 }
 
 `
@@ -282,27 +308,22 @@ line-height:60px;
 
 
 //introduction section -----------------------------------------------------
-export const IntroWapper = styled.div`
-width:100%;
-height:100%;
-background-color:black;
-padding-top:5%;
+export const IntroWapper = styled(SectionWapper)`
+height:100vh;
+padding-top:10%;
 padding-bottom:2%;
 overflow:hidden;
 .description{
     margin:5% auto;
     text-align:center;
     color:white;
-    font-size:2vw;
 }
 
 @media only screen and (min-width:320px) and (max-width:480px){
     padding-top:30%;
     .description{
-        margin:23% auto;  
-        font-size:3vw;
+        margin:23% auto; 
     }
-
 }
 
 @media only screen and (min-width:768px) and (max-width:1366px){
@@ -394,6 +415,7 @@ font-family:TrashHand;
 `
 
 export const SocialMediaBar = styled.div`
+z-index:40;
 float:right;
 margin-right:5%;
 margin-top:5%;
@@ -522,12 +544,11 @@ i{
 
 //TimeLine section--------------------------------
 export const TimelineWapper = styled(SectionWapper)`
-background-color:black
+
 `
 
 export const TimelineDescription = styled.p`
-font-size:2vw;
-color:white;
+font-size:1.5rem;
 
 :hover{
     color:#3B5998;
@@ -535,7 +556,7 @@ color:white;
 
 
 @media only screen and (min-width:320px) and (max-width:480px){
-    font-size:3.5vw;
+    font-size:0.9rem;
 }
 
 `
@@ -550,98 +571,180 @@ background-color:white;
 `
 
 export const BlogItemWapper = styled.div`
-margin:5% 0;
+margin:2% 0;
 width: 90%;
-padding-bottom:5%;
-padding-left:10%;
-padding-right:10%;
+height:300px;
 border-radius:4px;
+box-sizing:border-box;
 box-shadow: rgba(46, 41, 51, 0.08) 0px 1px 2px, rgba(71, 63, 79, 0.08) 0px 2px 4px;
 transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s, padding 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
 :hover{
     transform: translateY(-0.25rem);
     box-shadow: rgba(46, 41, 51, 0.08) 0px 4px 8px, rgba(71, 63, 79, 0.16) 0px 8px 16px;
 }
-.date{
-    font-weight:bold;
+
+.img-container{
+    height:100%;
+    width:100%;
+    object-fit:cover;
+    transform: scale(0.8, 0.8);
 }
 
-.title{
-    margin:5% 0 0 0;
-    font-weight:bolder;
-    font-size:20px;
-}
+.blog-content-container{
+    width:100%;
+    height:70%;
+    margin-top:20%;
+    padding-left:5%;
+    padding-right:5%;
+    padding-bottom:15px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items:flex-start;
 
-.content{
-    margin:5% 0;
-    font-size:18px;
-}
+    .author-container{
+        display:flex;
+        flex-direction:row;
+        justify-content:center;
+        align-items:center;
+        
+        .author-avatar{
+            width:50px;
+            height:50px;
+            border-radius:100%;
+            object-fit:contain;
+        }
 
-.author{
-    margin:5% 0 0 0;
-    font-weight:bold;
-}
+        .author-name{
+            font-size:1rem;
+            color:black;
+            margin-left:15px;
+        }
+    }
 
-button{
-    margin:0% 10% 0 10%;
+    .blog-title{
+        font-size:1.5rem;
+        font-weight:900;
+        color:black;
+    }
+
+    .blog-subtitle{
+        font-size:1.2rem;
+        font-weight:bold;
+        text-align:left;
+    }
+
+    .blog-date{
+        width:100%;
+        font-size:1rem;
+        text-align:right;
+    }
+
 }
 
 @media only screen and (min-width:320px) and (max-width:480px){
+    height:100%;
+    margin:30px 0;
+    .blog-content-container{
+        margin-top:5%;
+         .author-container{
+             margin-bottom:10px;
+         }
+         .blog-title{
+              margin-bottom:10px;
+         }
+         .blog-subtitle{
+              margin-bottom:10px;
+         }
 
+    }
 }
   
 `
 
 //------------footer
 
-export const AboutUs = styled.div`
-text-align:center;
+export const FooterWrapper = styled(SectionWapper)`
+height:360px;
 color:white;
-
-`
-
-export const WorkLinks= styled.div`
-text-align:center;
-color:white;
-`
-export const ContactInfo = styled.div`
-text-align:center;
-color:white;
-`
-
-export const FooterTitle = styled.div`
-font-weight:bold;
-margin:5% auto;
-`
-
-export const FooterDescription = styled.p`
-width:90%;
-margin:3% auto;
-color:#ABABAB;
-text-align:center;
-:hover{
+.thanks{
+    font-size:3.5rem;
+    font-weight:900;
     color:white;
 }
 
-i{
-    margin:0% 2%
+.footer-title{
+    font-size:1.5rem;
+    font-weight:900;
+    text-align:center;
+    margin-bottom:5%;
+}
+
+.follow-container{
+    width:100%;
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+
+    .follow-item{
+        width:50px;
+        height:80%;
+        border-radius:100%;
+        margin:0 10px;
+        object-fit:cover;
+        transition:all 0.3s linear;
+        &:hover{
+             transform:scale(1.2,1.2)
+        }
+    }
+}
+
+.contact-container{
+    width:100%;
+    height:150px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    align-items:center;
+
+    .contact-item{
+        width:100%;
+        font-size:1rem;
+    }
+}
+
+@media only screen and (max-width:480px){
+    height:100%;
+    padding-top:40px;
+    .thanks{
+        font-size:2rem;
+        text-align:center;
+        margin-bottom:40px;
+    }
+
+    .footer-title{
+        font-size:1.3rem;
+    }
+
+    .follow-container{
+         margin-bottom:40px;
+    }
+
+    .contact-container{
+         height:150px;
+         margin-bottom:40px;
+         .contact-item{
+             font-size:0.9rem;
+         }
+    }
 }
 
 `
 
 
 //Product Page
-export const ProductWapper = styled(SectionWapper)`
-background-color:white;
-padding-top:10%;
-padding-bottom:2%;
-padding-left:2%;
-padding-right:2%;
-overflow:hidden;
-@media only screen and (min-width:320px) and (max-width:480px){
-    padding-top:100px
-}
-`
+
 export const ProductImage = styled.div`
 width:90%;
 img{
@@ -767,14 +870,39 @@ export const FlipperCard = styled.div `
 `
 
 //------------------------------
+
+
+export const SkillSectionWrapper = styled(SectionWapper)`
+.skill-des{
+    font-size:1rem;
+    margin-left:10%;
+    margin-bottom:30px;
+    @media only screen and (max-width:480px){
+         margin-left:5%;
+    }
+}
+
+.skill-subtitle{
+    margin-left:5%;
+    margin-bottom:30px;
+    color:black;
+    font-size:1.2rem;
+    font-weight:bold;
+
+}
+
+
+` 
+
 export const SkillItem = styled.div`
+box-sizing:border-box;
+overflow:hidden;
 display:flex;
 flex-direction:row;
 justify-content:flex-start;
 align-items:center;
 width:100%;
-font-size:20px;
-font-weight:800;
+font-size:1rem;
 .icon{
     font-size:25px;
     width:25px;
@@ -794,43 +922,82 @@ font-weight:800;
 `
 
 //------------------------------
+
+export const JobSectionWrapper = styled(SectionWapper)`
+minHeight:100vh;
+.job-des{
+    font-size:1rem;
+    margin-left:10%;
+    margin-bottom:30px;
+    @media only screen and (max-width:480px){
+         margin-left:5%;
+    }
+}
+`
+
+
 export const JobItem = styled.div`
 width:100%;
+box-sizing:border-box;
+overflow:hidden;
 display:flex;
 flex-direction:column;
-justify-content:space-around;
-align-items:flex-start;
 margin:0 5%;
+
 .iconTitle{
- font-size:40px;
- margin-bottom:20px;
+    font-size:40px;
+    margin-bottom:20px;
+    color:black;
 }
-.icon{
-    margin-right:10px;
-    vertical-align:middle;
-    font-size:20px;
-}
+
 
 .title{
-    font-size:20px;
-    font-weight:800;
+    font-size:1.2rem;
+    font-weight:bold;
+    color:black;
 }
 
-.des{
-    font-size:18px;
-    margin-top:20px;
-    margin-bottom:20px;
+.des-container{
+    display:flex;
+    flex-direction:row;
+    width:100%;
+    align-items:center;
+
+    .icon{
+        margin-right:10px;
+        vertical-align:middle;
+        font-size:1.2rem;
+    }
+
+    .des{
+        font-size:1rem;
+        margin-top:20px;
+        margin-bottom:20px;
+    }
 }
+
+
+
 
 @media only screen and (max-width:480px){
-    margin: 30px 5%;
-    .title{
-        font-size:18px;
+    margin: 20px 5%;
+    .des-container{
+        .des{
+            font-size:0.9rem;
+        }
     }
-    .des{
-        font-size:15px;
-    }
+}
 
+@media only screen and (max-width:320px){
+     margin: 15px 0px;
+    .title{
+       font-size:1rem;
+     }
+      .des-container{
+        .des{
+            font-size:0.9rem;
+        }
+    }
 }
 
 `
@@ -838,50 +1005,6 @@ margin:0 5%;
 export const ExperienceWrapper = styled(SectionWapper)`
 
 `
-export const ProductItemWrapper = styled.div`
-box-sizing:border-box;
-width:90%;
-height:200px;
-background-color:${props=>props.backgroundColor};
-margin-bottom:20px;
-margin-left:5%;
-margin-right: 5%;
-padding:4%;
-border-radius:15px;
-cursor:default;
-display:flex;
-flex-direction:column;
-justify-content:space-around;
-align-items:start;
-overflow:hidden;
-transition: all 0.6s;
 
-
-.title{
-    font-weight:600;
-    font-size:22px;
-    color:white;
-}
-
-.icon{
-    margin-left:15px;
-    vertical-align:middle;
-    font-size:22px;
-    color:black;
-}
-
-.des{
-    font-weight:bold;
-    line-height:2;
-     color:white;
-}
-
-&:hover{
-    background-color:black;
-    .icon{
-        color:#61dafb;
-    }    
-}
-`
 
 

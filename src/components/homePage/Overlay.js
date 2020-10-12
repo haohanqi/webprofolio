@@ -8,6 +8,7 @@ const Overlay = ()=>{
 			height: "100vh",
 			zIndex: 100,
 			position:'fixed',
+			overflow:'hidden',
 			top:0,
 			left:0,
 		}}>

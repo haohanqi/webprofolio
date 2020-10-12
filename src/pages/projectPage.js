@@ -6,7 +6,7 @@ import ProductIntro from '../components/projectsPage/ProductIntro'
 import ProjectSection from '../components/projectsPage/ProjectSection'
 import {gsap} from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
-const ProductPage = () => {
+const ProjectPage = () => {
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger)
@@ -42,4 +42,4 @@ const ProductPage = () => {
   
   
 
-export default ProductPage
+export default ProjectPage

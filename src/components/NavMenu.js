@@ -17,7 +17,7 @@ const NavMenu = () => {
 							<Link className="page" to="/">Home</Link>
 						</MenuItem>
 						<MenuItem>
-							<Link className="page" to="/productPage">Project</Link>
+							<Link className="page" to="/projectPage">Project</Link>
 						</MenuItem>
 						<MenuItem>
 							<Link className="page" to="/daliyPage">Daily</Link>

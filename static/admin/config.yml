@@ -19,7 +19,7 @@ collections:
       - { name: body, label: Body, widget: markdown }
 
   - name: pagesContent
-    label: PagesContent
+    label: Pages
     files:
       - file: src/pageContent/index.md
         name: home

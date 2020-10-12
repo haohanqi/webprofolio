@@ -1,3 +1,5 @@
-### About me 
+---
+aboutTitle: About Me
+aboutMe: 'this is a text About Me '
+---
 
-this is a test file

@@ -21,10 +21,11 @@ collections:
   - name: pagesContent
     label: Pages
     files:
-      - file: src/pageContent/index.md
+      - file: src/pageContent/index.json
         name: home
         label: HomePage
         fields: 
+          - { name: templateKey, label: TemplateKey, widget: hidden, default: indexPage}
           - { name: aboutTitle, label: AboutTitle, widget: string }
           - { name: aboutMe, label: AboutMe, widget: text }
 

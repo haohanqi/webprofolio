@@ -34,9 +34,7 @@ const ProductPage = () => {
       <ProductIntro/>
       <ProjectSection ID={"manga-list-project"} 
                       projectDes={<div>des</div>}
-                      
       />
-      
       <ProjectSection ID={"mineral-project"}/>
     </Layout>
   )

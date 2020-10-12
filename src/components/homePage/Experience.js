@@ -1,7 +1,7 @@
 import React from 'react'
 import { Row, Col, Divider, Tabs } from 'antd'
 import { CheckCircleFilled } from '@ant-design/icons'
-import { SectionWapper, TitleWapper, Title, ExperienceWrapper } from '../style'
+import { TitleWapper, Title, ExperienceWrapper } from '../style'
 import web from '../../images/web.svg'
 import data from '../../images/data.svg'
 

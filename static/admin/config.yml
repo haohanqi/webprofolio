@@ -38,7 +38,7 @@ collections:
             name: workSection
             widget: object
             fields:
-               - { name: workTitle, label: WorkTitle, widget: text }
+               - { name: workTitle, label: WorkTitle, widget: string }
                - { name: workDes, label: WorkDes, widget: text } 
                - label: WorkSkills
                  name: workSkills
@@ -59,7 +59,7 @@ collections:
             name: skillSection
             widget: object
             fields:
-               - { name: skillTitle, label: SkillTitle, widget: text }
+               - { name: skillTitle, label: SkillTitle, widget: string }
                - { name: skillDes, label: SkillDes, widget: text } 
 
 

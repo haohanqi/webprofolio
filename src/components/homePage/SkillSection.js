@@ -8,14 +8,14 @@ const IconFont = createFromIconfontCN({
 	scriptUrl: '//at.alicdn.com/t/font_2078775_oujhj1wdfq.js'
 })
 
-const StillSection = ()=>{
+const StillSection = ({content})=>{
 	return (
 		<SkillSectionWrapper backgroundColor="white">
 
 			<Row type='flex' justify='start'>
 				<Col xl={12} lg={12} md={12} sm={24} xs={24} data-sal='zoom-in' data-sal-delay="400" data-sal-duration="800" >
 					<TitleWapper>
-						<Title color='black' textAlign='left'>Skills</Title>
+						<Title color='black' textAlign='left'>{content.skillTitle}</Title>
 					</TitleWapper>
 				</Col>
 			</Row>
@@ -26,9 +26,7 @@ const StillSection = ()=>{
 				 data-sal-duration="800">
 				<Col xl={12} lg={12} md={18} sm={24} xs={24}>
 					<div className="skill-des">
-						I use number of tools and library to make development much easier. I usually use 
-						Adobe XD to do wireframing, mock up for website and mobile app. React and React Native is my favorite frontend framework which 
-						I use daily. Ant Design is my favorite UI library, in my projects there are a lot of UI come from it. 
+						{content.skillDes}
 					</div>
 				</Col>
 			</Row>

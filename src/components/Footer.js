@@ -1,4 +1,4 @@
-import React,{useEffect} from 'react'
+import React from 'react'
 import {Row,Col} from 'antd'
 import { FooterWrapper} from './style'
 import avater1 from '../images/avater1.jpg'

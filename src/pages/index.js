@@ -12,6 +12,8 @@ import Footer from "../components/Footer"
 import Overlay from "../components/homePage/Overlay"
 import IntroOverlay from '../components/homePage/IntroOverlay'
 import gsap from 'gsap'
+import homeContent from '../pageContent/index.json'
+
 
 
 const IndexPage = ({data}) =>{
@@ -65,9 +67,9 @@ const IndexPage = ({data}) =>{
         <SEO title="Home" />
         <Overlay />
         <IntroOverlay/>
-        <IntroductionSection/>
-        <JobSection />
-        <SkillSection />
+        <IntroductionSection content={homeContent.aboutSection}/>
+        <JobSection content={homeContent.workSection}/>
+        <SkillSection content={homeContent.skillSection}/>
         <TimelineSection />
         <Experience />
         <BlogSection data={data} />

@@ -936,7 +936,7 @@ minHeight:100vh;
 `
 
 
-export const JobItem = styled.div`
+export const JobItemWrapper = styled.div`
 width:100%;
 box-sizing:border-box;
 overflow:hidden;

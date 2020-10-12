@@ -7,10 +7,9 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { ScrollToPlugin } from 'gsap/ScrollToPlugin'
 import { IntroBackground } from './style'
 import croods from '../../images/croods.svg'
-import homeContent from '../../pageContent/index.json'
 
 
-const IntroductionSection = ()=>{
+const IntroductionSection = ({content})=>{
       let titleShiftWidth
       let verticalShitftHeight
 
@@ -83,9 +82,9 @@ const IntroductionSection = ()=>{
 
                 <Col xl={12} lg={12} sm={20} xs={20}  align="start"> 
                   <div className='intro-background-content'>
-                   <div className="background-content-title">{homeContent.aboutTitle}</div>
+                  <div className="background-content-title">{content.aboutTitle}</div>
                     <div className="background-content-des">
-                      {homeContent.aboutMe}
+                      {content.aboutMe}
                     </div>
                     <div className="background-button">
                       <div>Hire Me</div>

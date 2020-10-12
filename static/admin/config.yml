@@ -26,8 +26,41 @@ collections:
         label: HomePage
         fields: 
           - { name: templateKey, label: TemplateKey, widget: hidden, default: indexPage}
-          - { name: aboutTitle, label: AboutTitle, widget: string }
-          - { name: aboutMe, label: AboutMe, widget: text }
+
+          - label: AboutSection
+            name: aboutSection
+            widget: object
+            fields:
+               - { name: aboutTitle, label: AboutTitle, widget: string }
+               - { name: aboutMe, label: AboutMe, widget: text }
+
+          - label: WorkSection
+            name: workSection
+            widget: object
+            fields:
+               - { name: workTitle, label: WorkTitle, widget: text }
+               - { name: workDes, label: WorkDes, widget: text } 
+               - label: WorkSkills
+                 name: workSkills
+                 widget: list
+                 allow_add: true
+                 fields: 
+                   - { name: workSkillCate, label: WorkSkillCate, widget: string }
+                   - label: WorkSkill
+                     name: workSkill
+                     widget: list
+                     allow_add: true
+                     fields: 
+                       - { name: workSkillDes, label: WorkSkillDes, widget: text }
+
+
+
+          - label: SkillSection
+            name: skillSection
+            widget: object
+            fields:
+               - { name: skillTitle, label: SkillTitle, widget: text }
+               - { name: skillDes, label: SkillDes, widget: text } 
 
 
 

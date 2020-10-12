@@ -7,6 +7,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { ScrollToPlugin } from 'gsap/ScrollToPlugin'
 import { IntroBackground } from './style'
 import croods from '../../images/croods.svg'
+import homeContent from '../../pageContent/index.json'
 
 
 const IntroductionSection = ()=>{
@@ -82,11 +83,9 @@ const IntroductionSection = ()=>{
 
                 <Col xl={12} lg={12} sm={20} xs={20}  align="start"> 
                   <div className='intro-background-content'>
-                    <div className="background-content-title">About Me</div>
+                   <div className="background-content-title">{homeContent.aboutTitle}</div>
                     <div className="background-content-des">
-                      Hi! My name is Hanqi Hao, recently granduated from post-graduate program. I mainly focus on 
-                      frontend development for website and mobile. And also I have one year work experiance with blockchain
-                      technology. 
+                      {homeContent.aboutMe}
                     </div>
                     <div className="background-button">
                       <div>Hire Me</div>

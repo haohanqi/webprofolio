@@ -1,6 +1,8 @@
 backend:
-  name: github
-  repo: haohanqi/webprofolio
+  name: git-gateway
+  branch: master
+
+
 
 media_folder: static/assets
 public_folder: /assets
@@ -15,14 +17,14 @@ collections:
       - { name: date, label: Date, widget: datetime }
       - { name: title, label: Title }
       - { name: body, label: Body, widget: markdown }
-  - name: pages
-    label: Pages
+
+  - name: pagesContent
+    label: PagesContent
     files:
       - file: src/pageContent/index.md
-        name: index
-        label: IndexPage
+        name: home
+        label: HomePage
         fields: 
-          - { name: templateKey, label: Template Key, widget: hidden, default: index-page }
           - { name: aboutTitle, label: AboutTitle, widget: string }
           - { name: aboutMe, label: AboutMe, widget: text }
 

@@ -6,6 +6,18 @@ import ProductIntro from '../components/projectsPage/ProductIntro'
 import ProjectSection from '../components/projectsPage/ProjectSection'
 import {gsap} from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import projectImage1 from '../images/projectImage1.svg'
+import projectImage2 from '../images/projectImge2.svg'
+import projectImage3 from '../images/projectImage3.svg'
+
+import trackingNumber from '../components/projectsPage/ProductContent/data/trackingNumberProject.json'
+import miningWorld from '../components/projectsPage/ProductContent/data/miningWorldProject.json'
+import personalWebsite from '../components/projectsPage/ProductContent/data/personalWebsite.json'
+import ProjectDesTemplate from '../components/projectsPage/ProductContent/ProjectDesTemplate'
+import ProjectTechTemplate from '../components/projectsPage/ProductContent/ProjectTechTemplate'
+
+
+
 const ProjectPage = () => {
 
   useEffect(() => {
@@ -33,9 +45,26 @@ const ProjectPage = () => {
       <NavHeader color="black" />
       <ProductIntro/>
       <ProjectSection ID={"manga-list-project"} 
-                      projectDes={<div>des</div>}
+                      nextId={"mineral-project"}
+                      projectName="T A F Landing Page"
+                      projectDes={<ProjectDesTemplate data={trackingNumber}/>}
+                      projectTech={<ProjectTechTemplate data={trackingNumber}/>}
+                      img={projectImage1}
       />
-      <ProjectSection ID={"mineral-project"}/>
+      <ProjectSection ID={"mineral-project"}
+                      nextId={"personal-website"}
+                      projectName="Mining World App"
+                      projectDes={<ProjectDesTemplate data={miningWorld} />}
+                      projectTech={<ProjectTechTemplate data={miningWorld} />}
+                      img={projectImage2}           
+      />
+      
+      <ProjectSection ID={"personal-website"}
+                      projectName="Personal Website"
+                      projectDes={<ProjectDesTemplate data={personalWebsite} />}
+                      projectTech={<ProjectTechTemplate data={personalWebsite} />}
+                      img={projectImage3}
+      />
     </Layout>
   )
 }

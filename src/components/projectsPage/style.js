@@ -13,7 +13,7 @@ height:100vh;
     align-items:center;
     font-size:1.5rem;
     font-weight:900;
-    margin-top:5%;
+    margin-top:10%;
     color:black;
     .icon{
         margin-top:10px;
@@ -46,11 +46,17 @@ height:100vh;
 	margin-left:5%;
 }
 
-.project-img{
+.project-img-container{
 	width:90%;
 	height:400px;
-    background-color:red;
     margin-left:5%;
+    .project-img{
+        object-fit:contain;
+        transition:all 0.3s linear;
+        &:hover{
+            transform: scale(1.2,1.2);
+        }
+    }
 }
 
 .tabDes{

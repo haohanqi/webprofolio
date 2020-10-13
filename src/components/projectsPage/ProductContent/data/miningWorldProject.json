@@ -1,0 +1,27 @@
+{
+	"projectTitle": "Mining World",
+	"porjectDes": {
+		"mainIdea": "A final project for post-graduated program. The purpose for this project is to help people who work in mineral industry to trade products and information more efficient",
+		"development": [
+			"Research on industry, understand the problem",
+			"From Sketch to design website",
+			"Use React Native to develop app",
+			"Publish on Apple Store"
+		],
+		"link": [{
+				"name": "Live Link",
+				"address": "itms-services://?action=download-manifest&amp;url=https://raw.githubusercontent.com/haohanqi/downloadApp/master/manifest.plist"
+			},
+
+			{
+				"name": "Github Link",
+				"address": "https://github.com/haohanqi/trackingNumberLandingPage"
+			}
+
+		]
+	},
+	"techStack": {
+		"framework": ["React Native"],
+		"library": ["Ant-Design Mobile", "Styled-Component", "React-Navigation"]
+	}
+}

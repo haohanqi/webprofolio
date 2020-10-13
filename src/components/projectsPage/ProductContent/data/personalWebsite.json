@@ -1,0 +1,26 @@
+{
+	"projectTitle": "Personal Website",
+	"porjectDes": {
+		"mainIdea": "My personal website to show my frontend skills",
+		"development": [
+			"From Sketch to design website",
+			"Find all resources such as images, icons",
+			"Use Gatsby to develop website"
+		],
+		"link": [{
+				"name": "Live Link",
+				"address": "https://webprofolio.netlify.app"
+			},
+
+			{
+				"name": "Github Link",
+				"address": "https://github.com/haohanqi/webprofolio"
+			}
+
+		]
+	},
+	"techStack": {
+		"framework": ["React", "Gatsby"],
+		"library": ["Ant-Design", "Styled-Component", "Netlify CMS","Gsap"]
+	}
+}

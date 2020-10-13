@@ -1,0 +1,28 @@
+{
+	"projectTitle":"Tracking Number",
+	"porjectDes":{
+		"mainIdea": "A landing page for a law company T A F. The company helps clients to deliver legal document and filing court document",
+		"development":[
+			"From Sketch to design website",
+			"Find all resources such as images, icons",
+			"Talk with clients, exchange idea",
+			"Use Gatsby to develop website"
+		],
+		"link": [
+					{
+						"name": "Live Link",
+						"address":"https://trackingnumber.netlify.app"
+					},
+
+					{
+						"name": "Github Link",
+						"address": "https://github.com/haohanqi/trackingNumberLandingPage"
+					}
+					
+				]
+	},
+	"techStack":{
+		"framework":["React","Gatsby"],
+		"library":["Ant-Design","Styled-Component","Netlify CMS", "GetForm"]
+	}
+}

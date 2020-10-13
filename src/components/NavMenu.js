@@ -3,7 +3,6 @@ import { NavMenuWrapper, MenuItem, MenuWrapper} from './style'
 import {Link} from 'gatsby'
 import {Row,Col} from 'antd'
 const NavMenu = () => {
-
 	return (
 		<NavMenuWrapper className="NavMenuContainer">
 			<Row type="flex" justify="space-around" align="center">

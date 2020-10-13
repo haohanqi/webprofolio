@@ -1,22 +1,19 @@
-import React,{useEffect} from 'react'
+import React,{useEffect,useState} from 'react'
 import { ProjectWrapper} from './style'
 import {Row,Col,Tabs} from 'antd'
 import {ArrowDownOutlined} from '@ant-design/icons'
 import {gsap} from 'gsap'
 import {ScrollToPlugin} from 'gsap/ScrollToPlugin'
-const ProjectSection = ({img,projectName,projectDes,projectTech,ID})=>{
 
-    let srcollHeight
+
+export default function ProjectSection({ img, projectName, projectDes, projectTech, ID,nextId }){
 
     useEffect(()=>{
         gsap.registerPlugin(ScrollToPlugin)
-        srcollHeight=window.innerHeight*2
     })
 
-    
-    const backAnimation = () => {
-        console.log(`${srcollHeight}px`)
-        gsap.to(window, 1, { scrollTo: srcollHeight})
+    const nextAnimation = () => {
+        gsap.to(window, 1, { scrollTo: `#${nextId}`})
     }
     
     return (
@@ -25,14 +22,20 @@ const ProjectSection = ({img,projectName,projectDes,projectTech,ID})=>{
 
             <Row type='flex' justify='space-around'>
                 
-                <Col xl={12} lg={12} md={20} sm={22} xs={22}>
-                    <div className="project-img">
-                        
+                <Col xl={10} lg={10} md={20} sm={22} xs={22} align="center">
+                    <div className="project-img-container">
+                        <img className="project-img" src={img} alt="projectImg" height="100%" width="100%"/>
+                    </div>
+                    
+                    <div className="back-button" onClick={() => { nextAnimation() }}>
+                        <div className="verticalLine"></div>
+                            Next
+                        <ArrowDownOutlined className="icon" />
                     </div>
                 </Col>
 
                 <Col xl={12} lg={12} md={20} sm={22} xs={22}>
-                    <h5>Manga List Project</h5>
+                    <h5>{projectName}</h5>
                     <Tabs>
                         <Tabs.TabPane key="0" tab={<h6>Description</h6>}>
                             <div className="tabDes">
@@ -41,8 +44,8 @@ const ProjectSection = ({img,projectName,projectDes,projectTech,ID})=>{
                         </Tabs.TabPane>
 
                         <Tabs.TabPane key="1" tab={<h6>Tech Stack</h6>}>
-                            <div>
-                                des
+                            <div className="tabDes">
+                                {projectTech}
                             </div>
                         </Tabs.TabPane>
                     </Tabs> 
@@ -50,19 +53,9 @@ const ProjectSection = ({img,projectName,projectDes,projectTech,ID})=>{
 
              </Row>    
 
-            <Row type='flex' justify='center'>
-                <Col span={24} align="center">
-                    <div className="back-button" onClick={() => { backAnimation() }}>
-                        <div className="verticalLine"></div>
-                        Next
-                        <ArrowDownOutlined className="icon" /> 
-                    </div>
-                </Col>
-            </Row>
-
         </ProjectWrapper>
         
     )
 }
 
-export default ProjectSection
+

@@ -4,7 +4,7 @@ import { GithubOutlined } from '@ant-design/icons'
 import { ProjectWrapper, ProjectItemWrapper } from './style'
 import { TitleWapper, Title} from '../style'
 import ProjectItem from './ProjectItem'
-import person from '../../images/person.svg'
+import projectCover from '../../images/projectCover.svg'
 
 const ProductIntro = ()=>{
 	
@@ -46,10 +46,10 @@ const ProductIntro = ()=>{
 						</Col>
 
 						<Col xl={12} lg={12} md={20} sm={24} xs={24}>
-							<ProjectItem title={"Gatsby"} 
-										 des={"Netlify CMS + Gatsby + Styled-Component + Antd Design Web"} 
-										 link="mineral-project"
-										 backgroundColor="#663399"/>
+								<ProjectItem title={"Gatsby"} 
+											 des={"Netlify CMS + Gatsby + Styled-Component + Antd Design Web"} 
+											 link="mineral-project"
+											 backgroundColor="#663399"/>
 						</Col>
 				
 						<Col xl={12} lg={12} md={20} sm={24} xs={24}>
@@ -68,7 +68,7 @@ const ProductIntro = ()=>{
 				</Col>
 
 				<Col span={12}>
-					<img src={person} width="100%" height="50%" />
+					<img src={projectCover} alt="projectCover" width="100%" height="50%" />
 				</Col>
 			</Row>
 

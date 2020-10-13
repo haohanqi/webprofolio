@@ -1,12 +1,8 @@
 backend:
   name: git-gateway
   branch: master
-
-
-
 media_folder: static/assets
 public_folder: /assets
-
 collections:
   - name: blog
     label: Blog
@@ -17,7 +13,6 @@ collections:
       - { name: date, label: Date, widget: datetime }
       - { name: title, label: Title }
       - { name: body, label: Body, widget: markdown }
-
   - name: pagesContent
     label: Pages
     files:
@@ -26,14 +21,12 @@ collections:
         label: HomePage
         fields: 
           - { name: templateKey, label: TemplateKey, widget: hidden, default: indexPage}
-
           - label: AboutSection
             name: aboutSection
             widget: object
             fields:
                - { name: aboutTitle, label: AboutTitle, widget: string }
                - { name: aboutMe, label: AboutMe, widget: text }
-
           - label: WorkSection
             name: workSection
             widget: object
@@ -52,15 +45,27 @@ collections:
                      allow_add: true
                      fields: 
                        - { name: workSkillDes, label: WorkSkillDes, widget: text }
-
-
-
           - label: SkillSection
             name: skillSection
             widget: object
             fields:
                - { name: skillTitle, label: SkillTitle, widget: string }
                - { name: skillDes, label: SkillDes, widget: text } 
+
+      - file: src/pageContent/projectPage.json
+        name: project
+        label: ProjectPage
+        fields: 
+          - label: ProjectItems
+            name: projectItems
+            widget: list
+            allow_add: true
+            fields:
+              - {name: projectTitle, label: ProjectTitle, widget: string}
+              - {name: projectDes, label: ProjectDes, widget: text}
+              - {name: link, label: Link, widget: string}
+              - {name: backgroundColor, label: BackgroundColor, widget: string}
+
 
 
 

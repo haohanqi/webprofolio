@@ -1,0 +1,28 @@
+{
+  "projectItems": [
+    {
+      "projectTitle": "React Native",
+      "projectDes": "Styled-Componment + Antd Design Mobile + Redux + React-Navigation\n\n",
+      "link": "mineral-project",
+      "backgroundColor": "#8ED1FC"
+    },
+    {
+      "projectTitle": "Gatsby",
+      "projectDes": "Netlify CMS + Gatsby + Styled-Component + Antd Design Web",
+      "link": "taf-landingPage",
+      "backgroundColor": "#5300EB"
+    },
+    {
+      "projectTitle": "Adobe XD",
+      "projectDes": "Using Adobe XD to build mock up and wireframe for website and mobile app ",
+      "link": "xdDesign",
+      "backgroundColor": "#E91E63"
+    },
+    {
+      "projectTitle": "Backend",
+      "projectDes": "Koa2 + MongoDB + JWT",
+      "link": "backendProject",
+      "backgroundColor": "#D4C4FB"
+    }
+  ]
+}

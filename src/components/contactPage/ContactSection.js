@@ -18,7 +18,7 @@ const ContactSection = () => {
 					<div className="contact-info-container">
 						<div className="contact-title">Frontend / UI UX Design / Mobile App</div>
 						<div className="contact-subtitle">Let's Work Together !</div>
-						<form className="contact-form-container" form method="post" netlify name="contact">
+						<form className="contact-form-container" method="post" data-netlify="true" data-netlify-honeypot="bot-field" name="contact">
 								<input type="hidden" name="bot-field" />
 								<input type="hidden" name="form-name" value="contact" />
 								<input type="text" className="formInput" placeholder="Your name" name="clients name"required/>

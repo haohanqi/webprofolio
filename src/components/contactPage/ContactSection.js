@@ -21,11 +21,10 @@ const ContactSection = () => {
 						<form className="contact-form-container" form method="post" netlify name="contact">
 								<input type="hidden" name="bot-field" />
 								<input type="hidden" name="form-name" value="contact" />
-								  
-								<input type="text" className="formInput" placeholder="Your name" required/>
-								<input type="email" className="formInput" placeholder="Your Email" required />
-								<input type="text" className="formInput" placeholder="Company Name"/>
-								<textarea type="text" className="messageInput" placeholder="Message"/>
+								<input type="text" className="formInput" placeholder="Your name" name="clients name"required/>
+								<input type="email" className="formInput" placeholder="Your Email" name="clients email" required />
+								<input type="text" className="formInput" name="company name" placeholder="Company Name"/>
+								<textarea type="text" className="messageInput" name="message" placeholder="Message"/>
 								<input type="submit" className="submit-button" value="Send"/>
 							</form>
 						</div>

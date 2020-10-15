@@ -22,7 +22,7 @@ const NavMenu = () => {
 							<Link className="page" to="/daliyPage">Daily</Link>
 						</MenuItem>
 						<MenuItem>
-							Contact
+							<Link className="page" to="/contactUs">Contact</Link>
 						</MenuItem>
 					</MenuWrapper>
 				</Col>

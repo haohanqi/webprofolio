@@ -2,21 +2,33 @@ import React from 'react'
 import {Divider} from 'antd'
 
 const ProjectDesTemplate = ({data}) => {
+
+	const renderDevelopment = (items)=>{
+		return (
+			<>
+				<h6>Development</h6>
+				{
+					items.map((item, index) => {
+						return (
+							<div>{index + 1}. {item}</div>
+						)
+					})
+				}
+				<Divider/>
+			</>
+		)
+	}
+
 	return (
 		<div>
 			<h6>Main Idea</h6>
 			<div>{data.porjectDes.mainIdea}</div>
 			<Divider/>
 
-			<h6>Development</h6>
 			{
-				data.porjectDes.development.map((item,index)=>{
-					return (
-						<div>{index+1}. {item}</div>
-					)
-				})
+				data.porjectDes.development ? renderDevelopment(data.porjectDes.development):null
 			}
-			<Divider/>
+			
 			{
 				data.porjectDes.link.map((item)=>{
 					return (

@@ -1,0 +1,23 @@
+{
+	"projectTitle": "Social Media Backend REST API",
+		"porjectDes": {
+		"mainIdea": "A simple mack-up social media backend which has functionalities like post blogs, post comments, add friends, login, logout.",
+			"development": [
+				"Post / Delete blogs",
+				"Post / Delete comments",
+				"Like / Unlike comments",
+				"Login / Logout"
+			],
+				"link": [
+					{
+						"name": "Github Link",
+						"address": "https://github.com/haohanqi/Blog-koa2"
+					}
+				]
+	},
+
+	"techStack": {
+		"framework": ["Koa2"],
+		"library": ["JWT", "MongoDB", "nodemon","cross-env"]
+	}
+}

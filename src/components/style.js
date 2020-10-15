@@ -39,6 +39,9 @@ padding-top:5%;
 padding-bottom:5%;
 padding-left:5%;
 padding-right:5%;
+@media only screen and (min-width:1700px){
+   padding:10% 15%;
+}
 `
 
 export const ContactButton = styled.div`
@@ -161,7 +164,7 @@ display:none;
 opacity:100;
 width:100%;
 overflow:hidden;
-background-color:white;
+background-color:#fafafa;
 padding-top:20px;
 padding-bottom:20px;
 z-index:10;
@@ -738,6 +741,10 @@ color:white;
              font-size:0.9rem;
          }
     }
+}
+
+@media only screen and (min-width:480px){
+  padding:5%;
 }
 
 `

@@ -7,9 +7,9 @@ import { JobSectionWrapper, TitleWapper, Title,BasicButton } from '../style'
 
 const JobSection = ({content})=>{
 	return (
-		<JobSectionWrapper backgroundColor="#f9f9f9" >
+		<JobSectionWrapper backgroundColor="#f9f9f9" id='worksection'>
 			<Row type='flex' justify='start'>
-				<Col id='worksection' xl={12} lg={12} md={12} sm={24} xs={24} data-sal='zoom-in' data-sal-delay="400" data-sal-duration="600" >
+				<Col  xl={12} lg={12} md={12} sm={24} xs={24} data-sal='zoom-in' data-sal-delay="400" data-sal-duration="600" >
 					<TitleWapper>
 						<Title color='black' textAlign='left'>{content.workTitle}</Title>
 					</TitleWapper>

@@ -42,11 +42,12 @@ const NavHeader = ({color,hiddenTitle}) => {
 		
 		if(open){
 			//hum menu animation
-			t2.to(".navHum-close .cbar",{width:"0px"})
+			t2.to(".nav-container", { backgroundColor: "rgb(250,250,250,100)" })
+			.to(".navHum-close .cbar",{width:"0px"})
 			.to(".navHum-open",0, { display: "flex"})
 			.to(".navHum-open .bar", {width:"3px",height:"33px"})
 			.to(".navHum-close", { display:"none"})
-
+		
 			//open Nav animation
 			t1.to(".NavMenuContainer",0.9,{
 				display: "block",
@@ -67,9 +68,11 @@ const NavHeader = ({color,hiddenTitle}) => {
 		}else{
 
 			t2.to(".navHum-open .bar", { height: "0px"})
+			.to(".nav-container", { backgroundColor: "rgb(250,250,250,0)" })
 			.to(".navHum-open", { display: "none" })
 			.to(".navHum-close", 0, { display: "flex"})
 			.to(".navHum-close .cbar", { width: "33px",height:"3px" })
+			
 			
 			t1.to(".menu", 0.3, {
 				opacity: "0",

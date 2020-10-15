@@ -1,0 +1,22 @@
+{
+	"projectTitle": "Adobe XD Design",
+	"porjectDes": {
+		"mainIdea": "Using Adobe XD design website and mobile app",
+		"link": [
+			{
+				"name": "T A F Landing page design",
+				"address": "https://xd.adobe.com/view/b3fd0032-c312-40d9-4f9b-7ec9ee6d8f23-c5cc/"
+			},
+
+			{
+				"name": "Moken Exchange Landing page design",
+				"address": "https://xd.adobe.com/view/882c4345-5ef7-4922-5ee5-cfac4dc0663c-fe1d/"
+			}
+		]
+	},
+
+	"techStack": {
+		"framework": ["Koa2"],
+		"library": ["JWT", "MongoDB", "nodemon", "cross-env"]
+	}
+}

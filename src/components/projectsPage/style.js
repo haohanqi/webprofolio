@@ -4,8 +4,7 @@ import {SectionWapper} from '../style'
 export const ProjectWrapper = styled(SectionWapper)`
 padding-bottom:0;
 height:100vh;
-
-.back-button{
+.next-button{
     width:100px;
     cursor:default;
     display:flex;
@@ -33,6 +32,18 @@ height:100vh;
     }
 }
 
+.backToTop-button{
+    font-size:1.5rem;
+    font-weight:900;
+    margin-top:10%;
+    color:black;
+    transition:all 0.6s linear;
+    cursor:default;
+    &:hover{
+        transform:scale(1.2)
+    }
+}
+
 .project-des{
     font-size:1rem;
     margin-left:10%;
@@ -50,6 +61,7 @@ height:100vh;
 	width:90%;
 	height:400px;
     margin-left:5%;
+    margin-bottom:8%;
     .project-img{
         object-fit:contain;
         transition:all 0.3s linear;
@@ -66,6 +78,36 @@ height:100vh;
     padding:5%;
     font-size:1rem;
 }
+
+@media only screen and (max-width:768px){
+    height:100%;
+    padding-bottom:5%;
+    .projectCover{
+        height:100%;
+        margin-bottom:30px;
+    }
+
+    .project-img-container{
+        height:300px;
+        margin-left:0;
+       .project-img{
+           transition:none;
+           &:hover{
+            transform: none;
+           }
+       }
+    }
+
+    .next-button{
+        display:none;
+    }
+
+     .backToTop-button{
+        display:none;
+    }
+}
+
+
 `
 
 export const ProjectItemWrapper = styled.div`

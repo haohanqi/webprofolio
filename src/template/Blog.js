@@ -3,7 +3,6 @@ import {graphql} from 'gatsby'
 import {Row,Col} from 'antd'
 import Author from './componments/Author'
 import './style.css'
-import Header from '../components/header'
 import Layout from '../components/layout'
 
 export default function Blog ({data}){
@@ -12,7 +11,6 @@ export default function Blog ({data}){
     const {html,frontmatter} = markdownRemark
     return (
     <Layout>
-       <Header/>
        <div className = 'container'>
         
           <Row type='flex' justify='start'>

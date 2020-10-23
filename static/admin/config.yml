@@ -68,64 +68,64 @@ collections:
               - {name: link, label: Link, widget: string}
               - {name: backgroundColor, label: BackgroundColor, widget: string}
 
-      - file: src/pageContent/dailyPageContent.json
-        name: daily
-        label: DailyPage
-        fields: 
-            - label: DailyIntro
-               name: dailyIntro
-               widget: object
-               fields :
-                  - {name: intro, label: Intro, widget: text}
+      # - file: src/pageContent/dailyPageContent.json
+      #   name: daily
+      #   label: DailyPage
+      #   fields: 
+      #       - label: DailyIntro
+      #          name: dailyIntro
+      #          widget: object
+      #          fields :
+      #             - {name: intro, label: Intro, widget: text}
 
-            - label: DailyDog
-               name: dailyDog
-               widget: object
-               fields :
-                  - {name: intro, label: Intro, widget: text}
+      #       - label: DailyDog
+      #          name: dailyDog
+      #          widget: object
+      #          fields :
+      #             - {name: intro, label: Intro, widget: text}
 
-             - label: DailyUs
-               name: dailyUs
-               widget: object
-               fields :
-                  - {name: intro, label: Intro, widget: text}
+      #        - label: DailyUs
+      #          name: dailyUs
+      #          widget: object
+      #          fields :
+      #             - {name: intro, label: Intro, widget: text}
 
-                  - label: CityDes
-                    name: cityDes
-                    widget: object
-                    fields: 
-                      - label: Toronto
-                        name : toronto
-                        widget: object
-                        fields: 
-                          - {name: title, label: cityTile, widget: string}
-                          - {name: img, label: Img, widget: image}
-                          - {name: des, label: Des, widget: text}
+      #             - label: CityDes
+      #               name: cityDes
+      #               widget: object
+      #               fields: 
+      #                 - label: Toronto
+      #                   name : toronto
+      #                   widget: object
+      #                   fields: 
+      #                     - {name: title, label: cityTile, widget: string}
+      #                     - {name: img, label: Img, widget: image}
+      #                     - {name: des, label: Des, widget: text}
 
                       
-                      - label: Chicago
-                        name : chicago
-                        widget: object
-                        fields: 
-                          - {name: title, label: cityTile, widget: string}
-                          - {name: img, label: Img, widget: image}
-                          - {name: des, label: Des, widget: text}
+      #                 - label: Chicago
+      #                   name : chicago
+      #                   widget: object
+      #                   fields: 
+      #                     - {name: title, label: cityTile, widget: string}
+      #                     - {name: img, label: Img, widget: image}
+      #                     - {name: des, label: Des, widget: text}
 
-                      - label: Shanghai
-                        name : shanghai
-                        widget: object
-                        fields: 
-                          - {name: title, label: cityTile, widget: string}
-                          - {name: img, label: Img, widget: image}
-                          - {name: des, label: Des, widget: text}
+      #                 - label: Shanghai
+      #                   name : shanghai
+      #                   widget: object
+      #                   fields: 
+      #                     - {name: title, label: cityTile, widget: string}
+      #                     - {name: img, label: Img, widget: image}
+      #                     - {name: des, label: Des, widget: text}
 
-                      - label: xian
-                        name : xian
-                        widget: object
-                        fields: 
-                          - {name: title, label: cityTile, widget: string}
-                          - {name: img, label: Img, widget: image}
-                          - {name: des, label: Des, widget: text}
+      #                 - label: xian
+      #                   name : xian
+      #                   widget: object
+      #                   fields: 
+      #                     - {name: title, label: cityTile, widget: string}
+      #                     - {name: img, label: Img, widget: image}
+      #                     - {name: des, label: Des, widget: text}
 
                       
 

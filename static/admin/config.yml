@@ -72,11 +72,6 @@ collections:
         name: daily
         label: DailyPage
         fields: 
-          - label: ProjectItems
-            name: projectItems
-            widget: object
-            fields:
-
             - label: DailyIntro
                name: dailyIntro
                widget: object

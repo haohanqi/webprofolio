@@ -66,27 +66,26 @@ collections:
               - {name: backgroundColor, label: BackgroundColor, widget: string}
 
       - file: src/pageContent/dailyPageContent.json
-        name: daily
+        name: dailyPage
         label: DailyPage
         fields: 
-            - label: DailyIntro
+             - label: DailyIntro
                name: dailyIntro
                widget: object
-               fields :
+               fields:
                   - {name: intro, label: Intro, widget: text}
 
-            - label: DailyDog
+             - label: DailyDog
                name: dailyDog
                widget: object
                fields :
-                  - {name: intro, label: Intro, widget: text}
+                  - {name: introDog, label: IntroDog, widget: text}
 
              - label: DailyUs
                name: dailyUs
                widget: object
                fields :
-                  - {name: intro, label: Intro, widget: text}
-
+                  - {name: introUs, label: IntroUs, widget: text}
                   - label: CityDes
                     name: cityDes
                     widget: object

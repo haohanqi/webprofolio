@@ -1,12 +1,9 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
 import NavHeader from './NavHeader'
 
 const Layout = ({ children }) => {
-  
-
   return (
     <div className="main" style={{ width: "100%"}}>
       <NavHeader color="black" />

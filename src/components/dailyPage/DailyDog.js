@@ -2,6 +2,7 @@ import React,{useState,useEffect} from 'react'
 import {Row,Col} from 'antd'
 import {RightCircleOutlined} from '@ant-design/icons'
 import {gsap,TweenMax} from 'gsap'
+import ScrollToPlugin from 'gsap/ScrollToPlugin'
 import { DailyIntroContentWrapper,DailyImage } from './style'
 import seven from '../../images/seven.svg'
 import kobe from '../../images/kobe.svg'
@@ -12,18 +13,18 @@ import DailyDogDetailsOverlay from './DailyDogDetailsOverlay'
 
 
 
-const DailyDog = () => {
+const DailyDog = ({ next }) => {
 
 	const [openDetails,setOpenDetails] = useState(false)
 	const [id, setId] = useState(null)
-	let t2 = gsap.timeline()
-	let t1 = gsap.timeline()
+	const t1 = gsap.timeline()
 
 	useEffect(()=>{
+		gsap.registerPlugin(ScrollToPlugin)
 		TweenMax.to(".daily-dog-container", 0, {
 			visibility: "visible"
 		})
-	})
+	},[])
 
 	useEffect(() => {
 		if (openDetails) {
@@ -34,17 +35,6 @@ const DailyDog = () => {
 		   }
 	}, [openDetails])
 
-	
-	const onMouseEnterAnimation = (name)=>{
-		t2.to(`.${name} .hover-text-container`, 0.6, { height: "100%", opacity: 100, backgroundColor:'rgb(255,255,255,0.3)'})
-		.from(`.${name} .hover-text-title`, 0.3, { y: 100, opacity: 0, })
-		.from(`.${name} .hover-icon-text`, 0.3, { y: 100, opacity: 0, })
-		.from(`.${name} .hover-icon`, 0.3, { x: -100, opacity: 0, repeat: true })
-	}
-
-	const onMouseLeaveAnimation = (name)=>{
-		t2.to(`.${name} .hover-text-container`, 0.4, { height: "0%", opacity: 0 })
-	}
 
 
 	return (
@@ -54,29 +44,29 @@ const DailyDog = () => {
 			
 			<Row type='flex' justify='space-around' align="middle">
 				<Col xl={12} lg={12} xs={24} sm={24}>
-					<DailyIntroContentWrapper color="white" hoverColor="black" buttonHoverBackground="white">
+					<DailyIntroContentWrapper color="black" hoverColor="white" buttonHoverBackground="black">
 						<div className="content-title">Lovely " Kids "</div>
 						<p className="content-des">
 							<b>They are not just pets,they are my family.</b><br/>
 						       They are LOYALTY, they love us unconditionally, they are SKK
 						</p>
-						<div className="next-button">
+						<div className="next-button" onClick={() => { next(2) }}>
 							<div>Next</div>
 						</div>
 					</DailyIntroContentWrapper>
 				</Col>
 
 
-				<Col xl={10} xl={10} sm={20} xs={20}>
-					<Row type="flex" justify="space-around" align="middle" style={{marginBottom:"30px"}}>
-						<Col xl={12} xl={12} sm={24} xs={24}>
+				<Col xl={12} xl={12} sm={20} xs={20}  style={{minHeight:"100vh", backgroundColor:"#fafafa"}}>
+					<Row type="flex" justify="space-around" align="middle" style={{ marginBottom: "60px", marginTop: "60px"}}>
+						<Col xl={12} xl={12} sm={24} xs={24} align="center">
 							<DailyImage 
 								width="80%"
 								height="350px" 
 								className="seven" 
 								onClick={()=>{setOpenDetails(true); setId(1)}}
-								onMouseEnter={() => { onMouseEnterAnimation("seven") }}
-								onMouseLeave={() => { onMouseLeaveAnimation("seven") }}
+								// onMouseOver={() => { onMouseEnterAnimation("seven") }}
+								// //onMouseLeave={() => { onMouseLeaveAnimation("seven") }}
 								>
 								<img src={seven}/>
 
@@ -88,21 +78,20 @@ const DailyDog = () => {
 
 									<div className="hover-button">
 										<div className="hover-icon-text">See More</div>
-										<div><RightCircleOutlined className="hover-icon"/></div>
 									</div>
 								</div>
 
 							</DailyImage>
 						</Col>
 						
-						<Col xl={12} xl={12} sm={0} xs={0}>
+						<Col xl={12} xl={12} sm={0} xs={0} align="center">
 							<DailyImage 
 								width="50%" 
 								height="200px"
 								className="kobe" 
 								onClick={() => { setOpenDetails(true); setId(2) }}
-								onMouseEnter={() => { onMouseEnterAnimation("kobe") }}
-								onMouseLeave={() => { onMouseLeaveAnimation("kobe") }}
+								// onMouseEnter={() => { onMouseEnterAnimation("kobe") }}
+								// onMouseLeave={() => { onMouseLeaveAnimation("kobe") }}
 							>	
 								<img src={kobe} />
 								<div className="hover-text-container">
@@ -121,8 +110,8 @@ const DailyDog = () => {
 								height="200px"
 								className="kyla"
 								onClick={() => { setOpenDetails(true); setId(3) }}
-								onMouseEnter={() => { onMouseEnterAnimation("kyla") }}
-								onMouseLeave={() => { onMouseLeaveAnimation("kyla") }}
+								// onMouseEnter={() => { onMouseEnterAnimation("kyla") }}
+								// onMouseLeave={() => { onMouseLeaveAnimation("kyla") }}
 							>	
 								<img src={kyla} />
 								<div className="hover-text-container">

@@ -1,10 +1,11 @@
 import React from 'react'
 import {Timeline,Icon,Row,Col} from 'antd'
-import {TimelineWapper,TitleWapper,Title,TimelineDescription} from '../style'
+import {TitleWapper,Title} from '../basicStyle'
+import { TimelineWrapper, TimelineDescription} from './style'
 const TimelineSection = ()=>{
 
     return(
-    <TimelineWapper id='timeline' backgroundColor="#f9f9f9" >
+    <TimelineWrapper id='timeline' backgroundColor="#f9f9f9" >
     <Row type='flex' justify='start'>
         <Col xl={12} lg={12} md={12} sm={24} xs={24} data-sal='zoom-in' data-sal-delay="400" data-sal-duration="400" > 
         <TitleWapper>
@@ -39,7 +40,7 @@ const TimelineSection = ()=>{
       </Col>
     </Row>
      
-    </TimelineWapper>
+    </TimelineWrapper>
 
     )
 }

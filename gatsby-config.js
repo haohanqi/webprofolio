@@ -15,6 +15,13 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `markdownPage`,
+        path: `${__dirname}/src/markdownPage`,
+      },
+    },
     
     {
       resolve: `gatsby-plugin-manifest`,
@@ -28,19 +35,30 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Lato`,
+            variants: [`900`, `400`, `700`,`regular`,`bold`]
+          },
+          {
+            family: `Open Sans`,
+            variants: [`400`, `700`]
+          },
+        ],
+      },
+    },
+
     'gatsby-plugin-antd',
     `gatsby-plugin-styled-components`,
 
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `markdownPage`,
-        path: `${__dirname}/src/markdownPage`,
-      },
-    },
+    
     
     `gatsby-transformer-remark`,
     `gatsby-plugin-netlify-cms`,

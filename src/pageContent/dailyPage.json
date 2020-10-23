@@ -1,0 +1,38 @@
+{
+	"dailyIntro":{
+		"intro": ""
+
+	},
+
+	"dailyDog":{
+		"intro": ""
+	},
+
+	"dailyUs":{
+		"intro":"Lang-distance for 4 year, looking forward to next stage.",
+		"cityDes":{
+			"toronto": {
+				"title": "Toronto",
+				"imgName": "toronto",
+				"des": " I have been in Toronto for 6 years. From high school to today. I really love this city. I still remember my first winter here, I was shock by the view and temperature. 6 year after, I already fail in love with it."
+			},
+
+			"chicago": {
+				"title": "Chicago",
+				"imgName": "chicago",
+				"des": "We are from different cities. Actually, different countries. But we have been together for 4 years. Lang-diestance is a really good test for us, but at the same time it also tortures us. "
+			},
+
+			"shanghai": {
+				"title": "shanghai",
+				"imgName": "shanghai",
+				"des": "2018 summer. we back to China. Vising my family. The picture above probably is my favorite picture all time. In the picture, the most 3 important women in my life, are playing mahjong"
+			},
+			"xian": {
+				"title": "xian",
+				"imgName": "xian",
+				"des": ""
+			}
+		}
+	}
+}

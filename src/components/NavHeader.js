@@ -1,6 +1,6 @@
 import React, { useState, useEffect }  from 'react'
 import {Row,Col} from 'antd'
-import { NavHeaderWrapper, NavHumClose, NavHumOpen} from './style'
+import { NavHeaderWrapper, NavHumClose, NavHumOpen} from './basicStyle'
 import NavMenu from './NavMenu'
 import gsap from 'gsap'
 import { ScrollTrigger} from 'gsap/ScrollTrigger'

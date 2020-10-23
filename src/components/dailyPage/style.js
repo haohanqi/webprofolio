@@ -112,8 +112,8 @@ color:${props=>props.color};
 }
 
 @media only screen and (max-width:480px){
-	height:50vh;
-	justify-content:flex-start;
+	height:100vh;
+	justify-content:center;
 
 	.content-title{
 		width:90%;
@@ -128,7 +128,6 @@ color:${props=>props.color};
 	.next-button{
 		width:90%;
 	}
-
 }
 
 @media only screen and (max-width:320px){
@@ -156,9 +155,11 @@ cursor:default;
 	flex-direction:column;
  	justify-content:center;
 	align-items:center;
-	height:0%;
+	height:100%;
 	width:100%;
 	opacity:0;
+	cursor:pointer;
+	color:black;
 	.hover-text-title{
 		font-size:3rem;
 		.highlight{
@@ -166,21 +167,14 @@ cursor:default;
 			font-weight:900;
 		}
 	}
+	transition:all 0.3s linear;
 
 	.hover-button{
 		font-size:1rem;
 		font-weight:bold;
-		display:flex;
-		flex-direction:row;
-		justify-content:space-around;
-		align-items:center;
 		height:30px;
 		width:50%;
 		color:black;
-		.hover-icon{
-			vertical-align:middle;
-			font-size:25px;
-		}
 	}
 }
 
@@ -189,7 +183,13 @@ img{
 	object-fit:cover;
 	width:100%;
 	height:100%;
-	transition:all 0.3s ease;
+}
+
+&:hover{
+	.hover-text-container{
+		opacity:1;
+		transform: translateY(-30px);
+	}
 }
 
 
@@ -366,9 +366,6 @@ color:black;
 		}
 	}
 }
-
-
-
 `
 
 export const DailyDogDetailsBackground = styled.div`
@@ -396,8 +393,6 @@ z-index:30;
 		font-size:60px;
 	}
 }
-
-
 `
 
 export const DailyDogDetailsOverlayWrapper = styled.div`
@@ -425,6 +420,116 @@ align-items:center;
 		font-weight:bold;
 	}
 }
+`
 
+export const DailyUsMenueWrapper = styled.div`
+height:100%;
+width:100%;
+padding-top:60px;
+display:flex;
+flex-direction:column;
+justify-content:space-around;
+align-items:center;
+
+.menuItemWrapper{
+	width:90%;
+	display:flex;
+	flex-direction:row;
+	justify-content:space-around;
+	align-items:center;
+	color:black;
+	cursor:pointer;
+
+	.menuItem{
+		font-size:2.5rem;
+		font-weight:bold;
+		width:100%;
+		height:60px;
+		position:relative;
+		text-align:center;
+
+		&:before{
+			position:absolute;
+			top:30px;
+			right:0;
+			content:'';
+			width:0;
+			height:3px;
+			background-color:white;
+			transition:0.4s ease;
+		}
+		
+		&:after{
+			position:absolute;
+			left:0;
+			content:'';
+			width:0;
+			height:3px;
+			background-color:white;
+			transition:0.4s ease;
+		}
+
+
+		&:hover{
+			&:after{
+				width:30%;
+				left:0;
+				background-color:black;
+			}
+
+			&:before{
+				width:30%;
+				right:0;
+				background-color:black;
+			}
+		}
+
+	}
+}
+
+`
+
+export const DailyUsDetailsWrapper = styled.div`
+width:50%;
+height:100%;
+background-color:black;
+z-index:50;
+position:absolute;
+top:0;
+right:0;
+color:white;
+overflow:hidden;
+display:flex;
+padding:5%;
+flex-direction:column;
+justify-content:space-around;
+align-items:flex-start;
+
+.closeButton{
+	position:absolute;
+	top:40px;
+	right:20px;
+	width:30px;
+	height:30px;
+	font-size:1.5rem;
+}
+
+.title{
+	flex:1;
+	font-size:3rem;
+	font-weight:900;
+}
+
+.img{
+	flex:2;
+	width:60%;
+	background-color:white;
+	margin-bottom:30px;
+}
+
+.des{
+	flex:2;
+	font-size:1.5rem;
+}
 `
 

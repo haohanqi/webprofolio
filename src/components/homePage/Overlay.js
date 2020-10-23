@@ -1,20 +1,11 @@
 import React from 'react'
+import { OverlayWrapper } from './style'
 
 const Overlay = ()=>{
 	return (
-		<div className="overlay-container" style={{
-			backgroundColor: "white",
-			width: "100%",
-			height: "100vh",
-			zIndex: 100,
-			position:'fixed',
-			overflow:'hidden',
-			top:0,
-			left:0,
-		}}>
-			<h2 className="overlay-text" style={{position:'absolute',top:"50%",textAlign:"center",width:'100%'}}>" Half Reader, Half Coder "</h2>
-
-		</div>
+		<OverlayWrapper className="overlay-container">
+			<h2 className="overlay-text">Half Reader Half Coder</h2>
+		</OverlayWrapper>
 	)
 }
 

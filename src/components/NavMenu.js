@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavMenuWrapper, MenuItem, MenuWrapper} from './style'
+import { NavMenuWrapper, MenuItem, MenuWrapper} from './basicStyle'
 import {Link} from 'gatsby'
 import {Row,Col} from 'antd'
 const NavMenu = () => {

@@ -1,14 +1,14 @@
 import React from 'react';
 import { Link } from "gatsby"
-import {Row,Col,Button} from 'antd';
-import {BlogItemWapper} from '../style'
+import {Row,Col} from 'antd';
+import {BlogItemWrapper} from './style'
 import self from '../../images/self.svg'
 import blogCover from '../../images/blogCover.svg'
 
 const BlogItem = ({data})=> {
     
     return (
-        <BlogItemWapper>
+        <BlogItemWrapper>
             <Row type="flex" justify="start" style={{height:"100%"}}>
                 <Col xl={10} lg={10} sm={24} sm={24}>
                     <img className="img-container" src={blogCover}/>
@@ -29,7 +29,7 @@ const BlogItem = ({data})=> {
                     </div>
                 </Col>
             </Row> 
-        </BlogItemWapper>
+        </BlogItemWrapper>
     );
 
    }

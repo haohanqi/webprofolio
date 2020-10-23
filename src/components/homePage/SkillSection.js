@@ -1,7 +1,8 @@
 import React from 'react'
-import {Row,Col,Divider} from 'antd'
+import {Row,Col} from 'antd'
 import {Html5Outlined,createFromIconfontCN} from '@ant-design/icons'
-import { SkillSectionWrapper, TitleWapper, Title, SkillItem} from '../style'
+import { SkillSectionWrapper, SkillItem } from './style'
+import { TitleWapper, Title} from '../basicStyle'
 import graphql from '../../images/graphql-icon.svg'
 
 const IconFont = createFromIconfontCN({

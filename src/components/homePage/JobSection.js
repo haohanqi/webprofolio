@@ -1,8 +1,8 @@
 import React from 'react'
 import { Row, Col } from 'antd'
-import { CheckCircleFilled, DesktopOutlined, HighlightOutlined,MobileOutlined} from '@ant-design/icons'
 import JobItem from './JobItem'
-import { JobSectionWrapper, TitleWapper, Title,BasicButton } from '../style'
+import { JobSectionWrapper } from './style'
+import {  TitleWapper, Title,BasicButton } from '../basicStyle'
 
 
 const JobSection = ({content})=>{

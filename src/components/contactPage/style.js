@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import {SectionWapper} from '../style'
+import {SectionWapper} from '../basicStyle'
 
 export const ContactWrapper = styled(SectionWapper)`
 height:100vh;

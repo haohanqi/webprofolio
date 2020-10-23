@@ -1,5 +1,5 @@
 import React from 'react'
-import { JobItemWrapper } from '../style'
+import { JobItemWrapper } from './style'
 import {Col} from 'antd'
 import { CheckCircleFilled } from '@ant-design/icons'
 

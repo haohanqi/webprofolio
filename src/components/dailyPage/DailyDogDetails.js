@@ -6,7 +6,6 @@ import {Row,Col} from 'antd'
 
 
 const DailyDogDetails = ({open,id,setOpen}) => {
-	console.log(id)
 
 	const data=[
 		{

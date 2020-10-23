@@ -1,7 +1,7 @@
 import React from 'react'
 import { DailySectionContainer } from './style'
 
-const DailySection = ({ backgroundColor,children,hiddenBackButton}) => {
+const DailySection = ({ backgroundColor,children}) => {
 	return (
 		<DailySectionContainer backgroundColor={backgroundColor} className="panel">
 			{children}

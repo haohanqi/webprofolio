@@ -1,18 +1,18 @@
 import React,{useEffect} from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import NavHeader from '../components/NavHeader'
 import IntroductionSection from "../components/homePage/IntroductionSection"
 import SkillSection from '../components/homePage/SkillSection'
 import JobSection from '../components/homePage/JobSection'
 import TimelineSection from "../components/homePage/TimelineSection"
 import Experience from '../components/homePage/Experience'
 import BlogSection from "../components/homePage/BlogSection"
-import Footer from "../components/Footer"
+import Footer from "../components/homePage/Footer"
 import Overlay from "../components/homePage/Overlay"
 import IntroOverlay from '../components/homePage/IntroOverlay'
 import gsap from 'gsap'
 import homeContent from '../pageContent/index.json'
+import { GlobalFontFamily} from '../components/basicStyle'
 
 
 
@@ -58,13 +58,13 @@ const IndexPage = ({data}) =>{
       .from(".icon-text", 0.6, { opacity: 0, y: 30, ease: 'power4.in' })
       .from(".icon", 0.6, { opacity: 0, y: -30, ease: 'power4.in' })
       .from(".next-button-container", 0.6, { y: -100, repeat:2, yoyo:true})
-
-})
+}, [])
 
   return (
     (
       <Layout>
         <SEO title="Home" />
+        <GlobalFontFamily/>
         <Overlay />
         <IntroOverlay/>
         <IntroductionSection content={homeContent.aboutSection}/>
@@ -80,6 +80,8 @@ const IndexPage = ({data}) =>{
 
 
 } 
+
+//loading all the blog md file
 export const pageQuery = graphql`
   query {
     allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___title] }) {
@@ -97,19 +99,5 @@ export const pageQuery = graphql`
       }
     }
   }`
-
-// <div className='blog-container'>
-//   {
-//     data.allMarkdownRemark.edges.map((item)=>{
-//       return (
-//         <div className = 'blog-item-container'>
-//           <Link className = 'blog-item' style={{display:`block`}} key={item.node.frontmatter.path} to={item.node.frontmatter.path}>{item.node.frontmatter.title}</Link>
-//           <div className='author'>Written By: {item.node.frontmatter.author}</div>
-//           <div className = 'description'> {item.node.excerpt}</div>
-//         </div>
-//       )
-//     })
-//   }
-//   </div>
 
 export default IndexPage

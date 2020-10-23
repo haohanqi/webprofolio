@@ -1,12 +1,13 @@
 import React from 'react';
-import {BlogsWapper,Title,TitleWapper} from '../style'
+import {Title,TitleWapper} from '../basicStyle'
+import { BlogsWrapper} from './style' 
 import BlogItem from "./BlogItem"
 import {Row,Col} from 'antd'
 
 const BlogSection =({data})=> {
     
         return (
-            <BlogsWapper id='blogs'>
+            <BlogsWrapper id='blogs'>
                <Row type="flex" justify="start">
                 <Col xl={12} lg={12} md={12} sm={24} xs={24} data-sal='zoom-in' data-sal-delay="400" data-sal-duration="800"> 
                      <TitleWapper>
@@ -27,7 +28,7 @@ const BlogSection =({data})=> {
                   })
                }
         
-            </BlogsWapper>
+            </BlogsWrapper>
         );
     
 }

@@ -1,9 +1,9 @@
 import React from 'react'
 import {Row,Col} from 'antd'
 import { FooterWrapper} from './style'
-import avater1 from '../images/avater1.jpg'
-import avater2 from '../images/avater2.jpg'
-import dogs from '../images/dogs.jpg'
+import avater1 from '../../images/avater1.jpg'
+import avater2 from '../../images/avater2.jpg'
+import dogs from '../../images/dogs.jpg'
 
 
 const Footer=()=>{

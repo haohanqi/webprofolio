@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import {SectionWapper} from '../style'
+import {SectionWapper} from '../basicStyle'
 
 export const ProjectWrapper = styled(SectionWapper)`
 padding-bottom:0;
@@ -106,8 +106,6 @@ height:100vh;
         display:none;
     }
 }
-
-
 `
 
 export const ProjectItemWrapper = styled.div`

@@ -1,0 +1,33 @@
+{
+  "dailyIntro": {
+    "intro": "dada"
+  },
+  "dailyDog": {
+    "introDog": "dada"
+  },
+  "dailyUs": {
+    "introUs": "dada",
+    "cityDes": {
+      "toronto": {
+        "title": "Toronto",
+        "img": "/assets/avater1.JPG",
+        "des": "this is toronto"
+      },
+      "chicago": {
+        "title": "Chicago",
+        "img": "/assets/avater1.JPG",
+        "des": "dadad"
+      },
+      "shanghai": {
+        "title": "ShangHai",
+        "img": "/assets/avater1.JPG",
+        "des": "dadadadadad"
+      },
+      "xian": {
+        "title": "xian",
+        "img": "/assets/avater1.JPG",
+        "des": "dadada"
+      }
+    }
+  }
+}

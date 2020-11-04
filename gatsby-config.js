@@ -15,7 +15,7 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    
+  
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -58,6 +58,15 @@ module.exports = {
         path: `${__dirname}/src/markdownPage`,
       },
     },
+
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `uploadImages`,
+        path: `${__dirname}/static/assets`,
+      },
+    },
+
     
     `gatsby-transformer-remark`,
     `gatsby-plugin-netlify-cms`,

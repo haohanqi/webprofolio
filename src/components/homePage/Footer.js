@@ -1,7 +1,7 @@
 import React from 'react'
 import {Row,Col} from 'antd'
 import { FooterWrapper} from './style'
-import avater1 from '../../images/avater1.jpg'
+//import avater1 from '../../images/avater1.jpg'
 import avater2 from '../../images/avater2.jpg'
 import dogs from '../../images/dogs.jpg'
 
@@ -19,7 +19,7 @@ const Footer=()=>{
                     <div className="footer-title">Follow Us</div>
                     <div className="follow-container">
                         <img className='follow-item' src={dogs}/>
-                        <img className='follow-item' src={avater1} />
+                        <img className='follow-item'  />
                         <img className='follow-item' src={avater2} />
                     </div>
                 </Col>

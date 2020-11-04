@@ -19,28 +19,23 @@ const DaliyPage = () => {
 	useEffect(()=>{
 		gsap.registerPlugin(ScrollTrigger)
 		let sections = gsap.utils.toArray(".panel")
+
+		console.log(container.current.offsetWidth )
+
+		if (container.current.offsetWidth > 480){
+			gsap.to(sections, {
+				xPercent: -100 * (sections.length - 1),
+				ease: "none",
+				scrollTrigger: {
+					trigger: ".daily-container",
+					pin: true,
+					scrub: 0.6,
+					snap: 1 / (sections.length - 1),
+				}
+			})
+		}
 		
-		//get number of section for nextAnimation function
-		pageCount = sections.length
-
-		//horizontal scroll effect. when size is mobile, disable horizontal movement
-		gsap.to(sections,{
-			xPercent:-100*(sections.length-1),
-			ease:"none",
-			scrollTrigger:{
-				trigger:".daily-container",
-				pin:true,
-				scrub:0.6,
-				snap:1/(sections.length-1),
-				horizontal: container.current.offsetWidth > 480 ? true : false,
-			}
-		})
 	}, [])
-
-	// go to next section function, pass to each section
-	const nextAnimation = (page) => {
-		gsap.to(window, 1.5, { scrollTo: { x: container.current.offsetWidth / (pageCount-page) } })
-	}
 
 	return (
 		<>
@@ -49,15 +44,15 @@ const DaliyPage = () => {
 				<DailyPageContainer className="daily-container" ref={container}>
 				
 					<DailySection backgroundColor="white" hiddenBackButton={true}>
-						<DailyIntro next={nextAnimation}/>
+						<DailyIntro/>
 					</DailySection>
 
 					<DailySection backgroundColor="white" >
-						<DailyDog next={nextAnimation}/>
+						<DailyDog/>
 					</DailySection>
 
 					<DailySection backgroundColor="white">
-						<DailyUs next={nextAnimation}></DailyUs>
+						<DailyUs/>
 					</DailySection>
 				</DailyPageContainer>		
 			</Layout>

@@ -14,8 +14,6 @@ import gsap from 'gsap'
 import homeContent from '../pageContent/index.json'
 import { GlobalFontFamily} from '../components/basicStyle'
 
-
-
 const IndexPage = ({data}) =>{
 
   useEffect(()=>{
@@ -36,7 +34,7 @@ const IndexPage = ({data}) =>{
     }).from(
       ".intro-overlay-text",1,{
         y: "100",
-        color:"black",
+        opacity:0,
         ease: "power4.out",
         skewY: 7,
       }

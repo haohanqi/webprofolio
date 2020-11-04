@@ -27,7 +27,7 @@ overflow:hidden;
 export const IntroBackground = styled.div`
 z-index:40;
 width:100%;
-min-Height:100vh;
+min-height:100%;
 background-color:#FFAFAF;
 padding:15px;
 position:fixed;
@@ -35,7 +35,6 @@ top:0;
 left:0;
 right:0;
 bottom:0;
-
 .intro-background-title{
 	font-size:1.5rem;
 	font-weight:900;
@@ -114,7 +113,10 @@ bottom:0;
 		width:100%;
 		cursor:default;
 		font-size:0.8rem;
-		margin-top:30px;
+        margin-top:30px;
+        a{
+            color:black;
+        }
 		div{
 			width:120px;
 			height:30px;
@@ -123,7 +125,9 @@ bottom:0;
 			line-height:30px;
 			transition:0.4s ease;
 			&:hover{
-				color:white;
+				a{
+                    color:white;
+                }
 				background-color:black;
 			}
 	    }

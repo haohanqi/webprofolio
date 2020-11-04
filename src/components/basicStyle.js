@@ -50,6 +50,11 @@ cursor:default;
 font-size:0.85rem;
 margin-top:30px;
 color:black;
+
+a{
+    color:black;
+}
+
 div{
     width:140px;
     height:40px;
@@ -58,7 +63,9 @@ div{
     line-height:40px;
     transition:0.4s ease;
     &:hover{
-        color:white;
+        a{
+            color:white;
+        }
         background-color:black;
     }
 }

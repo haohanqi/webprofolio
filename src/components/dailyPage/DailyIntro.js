@@ -7,7 +7,7 @@ import intro1 from '../../images/intro1.svg'
 import intro2 from '../../images/intro2.svg'
 
 
-const DailyIntro = ({next}) => {
+const DailyIntro = () => {
 	
 	useEffect(()=>{
 		gsap.registerPlugin(ScrollToPlugin)
@@ -59,7 +59,7 @@ const DailyIntro = ({next}) => {
 		<div className="daily-intro-container" style={{ visibility: "hidden" }}>
 		
 			<Row type='flex' justify='space-around' align="middle" >
-					<Col xl={12} lg={12} sm={24} xs={24} style={{minHeight:"100vh"}}>
+					<Col xl={12} lg={12} md={12} sm={24} xs={24} style={{minHeight:"100vh"}}>
 						<DailyIntroContentWrapper color="black" hoverColor="white" buttonHoverBackground="black">
 							<div className="content-title">Daily Life</div>
 							<p className="content-des">
@@ -68,15 +68,12 @@ const DailyIntro = ({next}) => {
 								For fear has to do with punishment, and whoever fears has not been perfected in love. 
 								-1 John 4 : 1"
 							</p>
-							<div className="next-button" onClick={() => { next(1)}}>
-								<div>Next</div>
-							</div>
 						</DailyIntroContentWrapper>
 					</Col>
 				
-				<Col xl={12} xl={12} sm={0} xs={0} align="middle" style={{ backgroundColor: "#fafafa", minHeight: "100vh" }}>
+				<Col xl={12} xl={12} md={12} sm={0} xs={0} align="middle" style={{ backgroundColor: "#fafafa", minHeight: "100vh" }}>
 					<Row type='flex' justify="start" style={{marginTop:'60px'}}>
-						<Col xl={12} xl={12} sm={24} xs={24}> 
+						<Col xl={12} xl={12} md={24} sm={24} xs={24}> 
 							<DailyImage className="img-1-container" width="70%" height="360px">
 								<img className="img-1" src={intro1} />
 							</DailyImage>
@@ -84,7 +81,7 @@ const DailyIntro = ({next}) => {
 					</Row>
 
 					<Row type='flex' justify="end">
-						<Col xl={12} xl={12} sm={0} xs={0}> 
+						<Col xl={12} xl={12} md={24} sm={0} xs={0}> 
 							<DailyImage className="img-2-container" width="70%" height="360px">
 								<img className="img-2" src={intro2}/>
 							</DailyImage>

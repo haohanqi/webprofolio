@@ -13,7 +13,7 @@ import DailyDogDetailsOverlay from './DailyDogDetailsOverlay'
 
 
 
-const DailyDog = ({ next }) => {
+const DailyDog = () => {
 
 	const [openDetails,setOpenDetails] = useState(false)
 	const [id, setId] = useState(null)
@@ -43,23 +43,20 @@ const DailyDog = ({ next }) => {
 			<DadilyDogDetails open={openDetails} setOpen={setOpenDetails} id={id}/>
 			
 			<Row type='flex' justify='space-around' align="middle">
-				<Col xl={12} lg={12} xs={24} sm={24}>
+				<Col xl={12} lg={12} md={12} xs={24} sm={24}>
 					<DailyIntroContentWrapper color="black" hoverColor="white" buttonHoverBackground="black">
 						<div className="content-title">Lovely " Kids "</div>
 						<p className="content-des">
 							<b>They are not just pets,they are my family.</b><br/>
 						       They are LOYALTY, they love us unconditionally, they are SKK
 						</p>
-						<div className="next-button" onClick={() => { next(2) }}>
-							<div>Next</div>
-						</div>
 					</DailyIntroContentWrapper>
 				</Col>
 
 
-				<Col xl={12} xl={12} sm={20} xs={20}  style={{minHeight:"100vh", backgroundColor:"#fafafa"}}>
+				<Col xl={12} xl={12} md={12} sm={20} xs={20}  style={{minHeight:"100vh", backgroundColor:"#fafafa"}}>
 					<Row type="flex" justify="space-around" align="middle" style={{ marginBottom: "60px", marginTop: "60px"}}>
-						<Col xl={12} xl={12} sm={24} xs={24} align="center">
+						<Col xl={12} xl={12} md={20} sm={0} xs={0} align="center">
 							<DailyImage 
 								width="80%"
 								height="350px" 
@@ -84,7 +81,7 @@ const DailyDog = ({ next }) => {
 							</DailyImage>
 						</Col>
 						
-						<Col xl={12} xl={12} sm={0} xs={0} align="center">
+						<Col xl={12} xl={12} md={20} sm={0} xs={0} align="center">
 							<DailyImage 
 								width="50%" 
 								height="200px"
@@ -104,7 +101,7 @@ const DailyDog = ({ next }) => {
 					</Row>
 
 					<Row type="flex" justify="center">
-						<Col xl={12} xl={12} sm={0} xs={0}>
+						<Col xl={12} xl={12} md={20} sm={0} xs={0}>
 							<DailyImage 
 								width="100%" 
 								height="200px"

@@ -1,18 +1,30 @@
 import styled from 'styled-components'
 
+
+export const DailyPageContainer = styled.div`
+display:flex; 
+box-sizing:border-box
+overflow-x: hidden; 
+overflow-y: hidden;
+height: 100vh;
+width: 100%;
+
+@media only screen and (max-width:480px){
+	flex-direction:column;
+	overflow:auto;
+	min-height:100vh;
+}
+`
+
 export const DailySectionContainer = styled.div`
 flex-shrink:0;
 height:100%;
 width:100%;
 background-color:${props => props.backgroundColor};
 box-sizing:border-box;
-`
-export const DailyPageContainer = styled.div`
-display:flex; 
-overflow-x: hidden; 
-overflow-y: hidden;
-height: 100vh;
-width: 100%;
+@media only screen and (max-width:480px){
+	flex-shrink:1;
+}
 `
 
 export const BackHomeButtonWrapper = styled.div`
@@ -90,26 +102,26 @@ color:${props=>props.color};
 	margin-top:20px;
 }
 
-.next-button{
-	width:50%;
-	opacity:0;
-	cursor:default;
-	font-size:0.8rem;
-	margin-top:20px;
-	div{
-		width:120px;
-		height:30px;
-		border:1px solid ${props => props.borderColor};
-		text-align:center;
-		line-height:30px;
-		transition:0.4s ease;
-		&:hover{
-			color:${props => props.hoverColor};
-			background-color:${props => props.buttonHoverBackground};
-		}
-	}
+// .next-button{
+// 	width:50%;
+// 	opacity:0;
+// 	cursor:default;
+// 	font-size:0.8rem;
+// 	margin-top:20px;
+// 	div{
+// 		width:120px;
+// 		height:30px;
+// 		border:1px solid ${props => props.borderColor};
+// 		text-align:center;
+// 		line-height:30px;
+// 		transition:0.4s ease;
+// 		&:hover{
+// 			color:${props => props.hoverColor};
+// 			background-color:${props => props.buttonHoverBackground};
+// 		}
+// 	}
 
-}
+// }
 
 @media only screen and (max-width:480px){
 	height:100vh;
@@ -133,7 +145,6 @@ color:${props=>props.color};
 @media only screen and (max-width:320px){
 	height:55vh;
 	justify-content:flex-start;
-	
 }
 
 
@@ -146,6 +157,7 @@ height:${props => props.height};
 opacity:100;
 overflow:hidden;
 cursor:default;
+margin-top:5%;
 .hover-text-container{
 	position:absolute;
 	top:0;
@@ -216,6 +228,7 @@ right:0;
 bottom:0;
 width:100%;
 height:100vh;
+box-sizing:border-box;
 z-index:40;
 .top-overlay{
 	width:100%;
@@ -267,6 +280,21 @@ z-index:40;
 	.process{
 		height:5px;
 		width:30%;
+		background-color:white;
+	}
+}
+
+@media only screen and (max-width:768px){
+	.overlay-text-container{
+		font-size:1.5rem;
+	}
+
+	.overlay-text{
+		width:35%;
+	}
+	.process{
+		height:5px;
+		width:35%;
 		background-color:white;
 	}
 }
@@ -430,6 +458,7 @@ display:flex;
 flex-direction:column;
 justify-content:space-around;
 align-items:center;
+box-sizing:border-box;
 
 .menuItemWrapper{
 	width:90%;
@@ -487,18 +516,24 @@ align-items:center;
 	}
 }
 
+@media only  screen and (max-width:480px){
+	padding-top:0;
+}
+
 `
 
 export const DailyUsDetailsWrapper = styled.div`
 width:50%;
 height:100%;
+overflow-y:auto;
+overflow-x:hidden;
+box-sizing:border-box;
 background-color:black;
 z-index:50;
 position:absolute;
 top:0;
 right:0;
 color:white;
-overflow:hidden;
 display:flex;
 padding:5%;
 flex-direction:column;
@@ -522,14 +557,60 @@ align-items:flex-start;
 
 .img{
 	flex:2;
-	width:60%;
+	width:400px;
+	height:300px;
 	background-color:white;
 	margin-bottom:30px;
+	object-fit:contain;
 }
 
-.des{
+.detailsDes{
 	flex:2;
 	font-size:1.5rem;
+}
+
+@media only screen and (max-width:320px){
+	position:fixed;
+	width:100%;
+
+	.closeButton{
+		top:20px;
+		right:20px;
+	}
+
+	.title{
+		font-size:2rem;
+		margin-bottom:20px;
+	}
+
+
+	.img{
+		width:260px;
+		height:200px;
+	}
+
+	.detailsDes{
+		font-size:1rem;
+	}
+}
+
+@media only screen and (max-width:480px) and (min-width:321px){
+	position:fixed;
+	width:100%;
+
+	.title{
+		font-size:2.5rem;
+		margin-bottom:20px;
+	}
+
+	.img{
+		width:360px;
+		height:250px;
+	}
+
+	.detailsDes{
+		font-size:1.2rem;
+	}
 }
 `
 

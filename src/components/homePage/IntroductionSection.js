@@ -2,6 +2,7 @@ import React,{useEffect,useState,useRef} from 'react';
 import {Row,Col} from 'antd'
 import {ArrowDownOutlined} from '@ant-design/icons'
 import {gsap} from 'gsap'
+import {Link} from 'gatsby'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { ScrollToPlugin } from 'gsap/ScrollToPlugin'
 import { IntroWrapper,IntroBackground } from './style'
@@ -15,9 +16,10 @@ const IntroductionSection = ({content})=>{
 
 
   useEffect(()=>{
-
-    gsap.registerPlugin(ScrollToPlugin)
+    
     gsap.registerPlugin(ScrollTrigger)
+    gsap.registerPlugin(ScrollToPlugin)
+   
     measure.current = {
       titleShiftWidth: '',
       verticalShitftHeight: 0
@@ -98,7 +100,9 @@ const IntroductionSection = ({content})=>{
                   {content.aboutMe}
                 </div>
                 <div className="background-button">
-                  <div>Hire Me</div>
+                  <div>
+                    <Link to="/contactUs">Hire Me</Link>
+                  </div>
                 </div> 
               </div>
             </Col>

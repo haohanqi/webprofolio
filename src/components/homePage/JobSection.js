@@ -1,5 +1,6 @@
 import React from 'react'
 import { Row, Col } from 'antd'
+import {Link} from 'gatsby'
 import JobItem from './JobItem'
 import { JobSectionWrapper } from './style'
 import {  TitleWapper, Title,BasicButton } from '../basicStyle'
@@ -41,7 +42,9 @@ const JobSection = ({content})=>{
 			<Row type='flex' justify='center'>
 				<Col span={24} align='center'>
 					<BasicButton>
-						<div>see more projects</div>
+						<div>
+							<Link to='/projectPage'>see more projects</Link>
+						</div>
 					</BasicButton>
 				</Col>
 			</Row>

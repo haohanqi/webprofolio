@@ -26,7 +26,7 @@ const ContactSection = () => {
 								<input type="text" className="formInput" name="company name" placeholder="Company Name"/>
 								<textarea type="text" className="messageInput" name="message" placeholder="Message"/>
 								<input type="submit" className="submit-button" value="Send"/>
-							</form>
+						</form>
 						</div>
 				</Col>	
 			</Row>

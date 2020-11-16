@@ -5,6 +5,7 @@ import { DailyUsDetailsWrapper} from './style'
 import cover from '../../images/croods.svg'
 
 
+
 const DailyUsDetails = ({open, closeAnimation,data}) => {
 
 	const {title,des,img}=data

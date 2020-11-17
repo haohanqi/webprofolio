@@ -14,8 +14,6 @@ const DaliyPage = () => {
 	// using ref to get container width, in order to click next button to scroll to next section.
 	const container = useRef(null)
 
-	let pageCount;
-
 	useEffect(()=>{
 		gsap.registerPlugin(ScrollTrigger)
 		let sections = gsap.utils.toArray(".panel")

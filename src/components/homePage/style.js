@@ -319,7 +319,7 @@ export const BlogsWrapper = styled(SectionWapper)`
 export const BlogItemWrapper = styled.div`
 margin:2% 0;
 width: 90%;
-height:300px;
+min-height:250px;
 border-radius:4px;
 box-sizing:border-box;
 box-shadow: rgba(46, 41, 51, 0.08) 0px 1px 2px, rgba(71, 63, 79, 0.08) 0px 2px 4px;
@@ -339,7 +339,7 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 250ms cu
 .blog-content-container{
     width:100%;
     height:70%;
-    margin-top:20%;
+    margin-top:20px;
     padding-left:5%;
     padding-right:5%;
     padding-bottom:15px;
@@ -353,6 +353,7 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 250ms cu
         flex-direction:row;
         justify-content:center;
         align-items:center;
+        margin-bottom:10px;
         
         .author-avatar{
             width:50px;
@@ -371,6 +372,7 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 250ms cu
     .blog-title{
         font-size:1.5rem;
         font-weight:900;
+        text-align:left;
         color:black;
     }
 

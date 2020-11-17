@@ -20,7 +20,7 @@ const DailyUsDetails = ({open, closeAnimation,data}) => {
 	},[open])
 
 	const renderImg = ()=>{
-		return <img className="img" src={img ? require(`'../../../static${img}`) : cover}/>
+		return <img className="img" alt="daily image" src={img ? require(`'../../../static${img}`) : cover}/>
 	}
 
 	const renderDtails = () => {

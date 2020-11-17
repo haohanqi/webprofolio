@@ -7,6 +7,15 @@ import { createGlobalStyle } from 'styled-components';
 export const GlobalFontFamily = createGlobalStyle`
 body {
     font-family: Lato, sans-serif;
+    padding:0;
+    ol{
+        padding-inline-start::0;
+    }
+
+    ul{
+         padding-inline-start::0;
+    }
+    
 }
 `
 

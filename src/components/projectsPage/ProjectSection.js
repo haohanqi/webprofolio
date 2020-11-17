@@ -1,4 +1,4 @@
-import React,{useEffect,useState} from 'react'
+import React,{useEffect} from 'react'
 import { ProjectWrapper} from './style'
 import {Row,Col,Tabs} from 'antd'
 import {ArrowDownOutlined} from '@ant-design/icons'
@@ -22,7 +22,7 @@ export default function ProjectSection({ img, projectName, projectDes, projectTe
 
     const backToTopButton = ()=>{
         return (
-            <div className="backToTop-button" onClick={()=>{backToTopAnimation()}}>
+            <div className="backToTop-button" role="backToTop-button" onClick={()=>{backToTopAnimation()}}>
                 Back To Top
             </div>
         )
@@ -30,7 +30,7 @@ export default function ProjectSection({ img, projectName, projectDes, projectTe
 
     const nextButton = ()=>{
         return (
-            <div className="next-button" onClick={() => { nextAnimation() }}>
+            <div className="next-button" role="click-button" onClick={() => { nextAnimation() }}>
                 <div className="verticalLine"></div>
                      Next
                 <ArrowDownOutlined className="icon" />

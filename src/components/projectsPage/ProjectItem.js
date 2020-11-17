@@ -19,7 +19,7 @@ const ProjectItem = ({title,des,link,backgroundColor})=>{
 			</h5>
 			<p className="des">{des}</p>
 			<div className="seeMore">
-				<div className="des" onClick={()=>{scrollAnimation()}}>see more</div>
+				<div role="click-button" className="des" onClick={()=>{scrollAnimation()}}>see more</div>
 			</div>
 		</ProjectItemWrapper>
 	)

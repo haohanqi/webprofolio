@@ -1,4 +1,4 @@
-import React,{useEffect,useRef} from 'react'
+import React,{useEffect} from 'react'
 import {Row,Col} from 'antd'
 import {gsap,TweenMax} from 'gsap'
 import ScrollToPlugin from 'gsap/ScrollToPlugin'

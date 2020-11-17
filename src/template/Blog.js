@@ -1,7 +1,6 @@
 import React from 'react';
 import {graphql} from 'gatsby'
 import {Row,Col} from 'antd'
-import Author from './componments/Author'
 import './style.css'
 import Layout from '../components/layout'
 
@@ -33,7 +32,7 @@ export default function Blog ({data}){
 
         <Row type='flex' justify='start'>
              <Col xs={24} >
-                <Author name={frontmatter.author}/>
+              Author: Hao HanQi
              </Col>
         </Row>
           
@@ -58,7 +57,6 @@ query($path: String!) {
       date(formatString: "MMMM DD, YYYY")
       path
       title
-      author
     }
   }
 }

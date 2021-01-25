@@ -30,18 +30,20 @@ module.exports = {
     },
 
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      resolve: `gatsby-plugin-webfonts`,
       options: {
-        fonts: [
-          {
-            family: `Lato`,
-            variants: [`900`, `400`, `700`,`regular`,`bold`]
-          },
-          {
-            family: `Open Sans`,
-            variants: [`400`, `700`]
-          },
-        ],
+        fonts: {
+          google: [
+            {
+              family: `Lato`,
+              variants: [`900`, `400`, `700`, `regular`, `bold`],
+            },
+            {
+              family: `Open Sans`,
+              variants: [`400`, `700`],
+            },
+          ],
+        },
       },
     },
 

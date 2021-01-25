@@ -5,6 +5,6 @@
  */
 
 // You can delete this file if you're not using it
-import provider from "./src/store/config"
+import provider from "./src/state/config"
 
 export const wrapRootElement = provider

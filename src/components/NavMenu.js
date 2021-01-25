@@ -18,7 +18,7 @@ const NavMenu = () => {
 						<MenuItem>
 							<Link className="page" to="/projectPage">Project</Link>
 						</MenuItem>
-						<MenuItem>
+						<MenuItem id="daliyPage">
 							<Link className="page" to="/daliyPage">Daily</Link>
 						</MenuItem>
 						<MenuItem>
@@ -61,7 +61,6 @@ const NavMenu = () => {
 
 			<div className="socialMedia">
 				<Row type="flex" justify="space-around">
-					<Col>facebook</Col>
 					<Col>ins</Col>
 					<Col>github</Col>
 					<Col>in</Col>

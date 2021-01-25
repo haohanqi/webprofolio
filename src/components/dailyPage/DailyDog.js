@@ -1,6 +1,5 @@
 import React,{useState,useEffect} from 'react'
 import {Row,Col} from 'antd'
-import {RightCircleOutlined} from '@ant-design/icons'
 import {gsap,TweenMax} from 'gsap'
 import ScrollToPlugin from 'gsap/ScrollToPlugin'
 import { DailyIntroContentWrapper,DailyImage } from './style'
@@ -9,8 +8,6 @@ import kobe from '../../images/kobe.svg'
 import kyla from '../../images/kelly.svg'
 import DadilyDogDetails from './DailyDogDetails'
 import DailyDogDetailsOverlay from './DailyDogDetailsOverlay'
-
-
 
 
 const DailyDog = () => {
@@ -61,9 +58,6 @@ const DailyDog = () => {
 								width="80%"
 								height="350px" 
 								className="seven" 
-								onClick={()=>{setOpenDetails(true); setId(1)}}
-								// onMouseOver={() => { onMouseEnterAnimation("seven") }}
-								// //onMouseLeave={() => { onMouseLeaveAnimation("seven") }}
 								>
 								<img src={seven}/>
 
@@ -74,7 +68,7 @@ const DailyDog = () => {
 									</div>
 
 									<div className="hover-button">
-										<div className="hover-icon-text">See More</div>
+										
 									</div>
 								</div>
 
@@ -86,9 +80,7 @@ const DailyDog = () => {
 								width="50%" 
 								height="200px"
 								className="kobe" 
-								onClick={() => { setOpenDetails(true); setId(2) }}
-								// onMouseEnter={() => { onMouseEnterAnimation("kobe") }}
-								// onMouseLeave={() => { onMouseLeaveAnimation("kobe") }}
+							
 							>	
 								<img src={kobe} />
 								<div className="hover-text-container">
@@ -106,9 +98,7 @@ const DailyDog = () => {
 								width="100%" 
 								height="200px"
 								className="kyla"
-								onClick={() => { setOpenDetails(true); setId(3) }}
-								// onMouseEnter={() => { onMouseEnterAnimation("kyla") }}
-								// onMouseLeave={() => { onMouseLeaveAnimation("kyla") }}
+								
 							>	
 								<img src={kyla} />
 								<div className="hover-text-container">

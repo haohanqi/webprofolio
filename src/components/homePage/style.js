@@ -345,15 +345,17 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 250ms cu
     padding-bottom:15px;
     display:flex;
     flex-direction:column;
-    justify-content:space-between;
+    justify-content:space-around;
     align-items:flex-start;
 
     .author-container{
         display:flex;
         flex-direction:row;
-        justify-content:center;
+        justify-content:flex-start;
         align-items:center;
         margin-bottom:10px;
+        width:100%;
+        height:100px;
         
         .author-avatar{
             width:50px;
@@ -411,7 +413,7 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 250ms cu
 `
 
 export const FooterWrapper = styled(SectionWapper)`
-height:360px;
+min-height:360px;
 color:white;
 .thanks{
     font-size:3.5rem;
@@ -432,6 +434,7 @@ color:white;
     flex-direction:row;
     justify-content:center;
     align-items:center;
+    margin-bottom:5%;
 
     .follow-item{
         width:50px;

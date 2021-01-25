@@ -44,7 +44,7 @@ const ProjectPage = () => {
 
     }
     
-  })
+  },[])
   
 
   return (

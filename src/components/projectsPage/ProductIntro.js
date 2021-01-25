@@ -10,7 +10,7 @@ const ProductIntro = ()=>{
 	
 	return (
 		<ProjectWrapper className="project-section">
-			<Row type='flex' align="middle" style={{height:"100%"}}>
+			<Row type='flex' align="middle" >
 				<div>
 					<Row type='flex' justify='start' id="project-intro">
 						<Col  xl={12} lg={12} md={12} sm={24} xs={24} data-sal='zoom-in' data-sal-delay="400" data-sal-duration="600" >

@@ -24,7 +24,6 @@ height:100vh;
         transition:all 0.6s linear;
     }
     
-
     &:hover{
         .verticalLine{
             height:40px;

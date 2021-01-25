@@ -30,7 +30,7 @@ const IntroductionSection = ({content})=>{
   const st1 = gsap.timeline({
     scrollTrigger: {
       trigger: ".intro-background",
-      toggleActions: "play none none reverse",
+      toggleActions: "play none none none",
       start: "top top",
     }
   })

@@ -15,8 +15,12 @@ body {
     ul{
          padding-inline-start::0;
     }
-    
+
+    .ant-tabs .ant-tabs-top-content > .ant-tabs-tabpane, .ant-tabs .ant-tabs-bottom-content > .ant-tabs-tabpane {
+	    -webkit-backface-visibility: hidden;
+    } 
 }
+
 `
 
 export const TitleWapper = styled.div`
@@ -161,6 +165,11 @@ opacity:100;
 flex-direction:column;
 justify-content:space-between;
 align-items:center;
+@media only screen and (min-width:320px) and (max-width:480px){
+   #daliyPage{
+       display:none;
+   }
+}
 `
 
 export const MenuItem = styled.div`
@@ -209,7 +218,8 @@ a{
 @media only screen and (min-width:320px) and (max-width:480px){
     font-size:1.4rem;
     a{ 
-        width:60%
+        width:60%;
     }
+   
 }
 `

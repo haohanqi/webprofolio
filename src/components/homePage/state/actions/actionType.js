@@ -1,0 +1,1 @@
+export const INCREASE_ANIMATION_COUNTER = "increase_animation_counter"

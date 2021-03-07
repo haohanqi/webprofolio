@@ -68,7 +68,14 @@ module.exports = {
         path: `${__dirname}/static/assets`,
       },
     },
-
+    {
+      resolve: 'gatsby-plugin-react-svg',
+      options: {
+        rule: {
+          include: /svgs/,
+        },
+      },
+    },
     
     `gatsby-transformer-remark`,
     `gatsby-plugin-netlify-cms`,

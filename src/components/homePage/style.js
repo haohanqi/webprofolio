@@ -63,16 +63,23 @@ bottom:0;
 	flex-direction:column;
 	justify-content:space-around;
 	align-items:center;
-	color:black;
+    color:black;
+    cursor:pointer;
+    transition: all 0.3s linear;
 
 	.icon-text{
+        pointer:cursor;
 		font-size:1.2rem;
 		font-weight:bold;
 	}
 
 	.icon{
 		font-size:30px;
-	}
+    }
+    
+    &:hover{
+        background-color:white;
+    }
 
 	@media only screen and (max-width:480px){
 		width:60px;

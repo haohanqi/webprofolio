@@ -101,7 +101,7 @@ const IntroductionSection = ({content})=>{
                 </div>
                 <div className="background-button">
                   <div>
-                    <Link to="/contactUs">Hire Me</Link>
+                    <a href="https://www.notion.so/Resume-052874c7312d4687ba4a1f7a0d8df0d9">Hire Me</a>
                   </div>
                 </div> 
               </div>
